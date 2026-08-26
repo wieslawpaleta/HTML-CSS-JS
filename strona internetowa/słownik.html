@@ -16,11 +16,6 @@ h1 {
 text-shadow: 2px 2px 5px white;
 }
 
-.liste-emoji li::marker {
-	content: "🅰️";
-	font-size: 1.2em;
-}
-
 a:hover {color:red}
 
 a {
@@ -54,7 +49,25 @@ footer {
 
 <body style="background-image: url('https://wallpaperaccess.com/full/90278.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
 
-<table style="margin: 0 auto; border: 1px solid black; border-collapse: collapse; text-align:center; background-color: rgba(255, 255, 255, 0.5); width: 50%;">
+<!-- Główna tabela -->
+<table border="0" cellpadding="10" cellspacing="0" style="margin: 0 auto; text-align: center; vertical-align: middle;">
+
+<!-- RZĄD 1: GÓRA -->
+<tr>
+<td colspan=""></td>
+</tr>
+<!-- RZĄD 2: LEWO -->
+<tr>
+<td>
+<a href="https://dictionary.cambridge.org/" style="font-weight: bold;">
+              EN: Cambridge Dictionary<br>
+              <img src="cambridge.jpg" style="border-radius: 15px; width: 200px;"><br>
+<a href="https://dle.rae.es/"; style="font-weight: bold;">ES: Diccionario de la lengua española<br><img src="del.jpg"; style="border-radius: 15px; position: center; width: 200px;"></a>
+</td>
+<!-- RZĄD 2: środek -->
+<td style="border: 2px solid black; padding: 20px;">
+            
+            <table style="margin: 0 auto; border: 1px solid black; border-collapse: collapse; text-align:center; background-color: rgba(255, 255, 255, 0.5); width: 50%;">
 <tr>
 <th style="border: 1px solid black; padding: 10px;">ID</th>
 <td style="border: 1px solid black; padding: 10px;">Polski</td>
@@ -226,18 +239,28 @@ footer {
 
 </table>
 
-<div style="text-align: center;">
-<ol style="list-style-position: inside; padding: 0;" class="liste-emoji">
-  <li><a href="https://dictionary.cambridge.org/"; style="font-weight: bold;">
-EN: Cambridge Dictionary<br><img src="cambridge.jpg"; style="border-radius: 15px; position: center; width: 200px;"></a></li>
-  <li><a href="https://pl.pons.com/t%C5%82umaczenie"; style="font-weight: bold;">
-Słownik Wielojęzykowy<br><img src="pons.jpg"; style="border-radius: 15px; position: center; width: 200px;"></a></li>
-  <li><a href="https://dle.rae.es/"; style="font-weight: bold;">ES: Diccionario de la lengua española<br><img src="del.jpg"; style="border-radius: 15px; position: center; width: 200px;"></a></li>
-  <li><a href="https://www.larousse.fr/dictionnaires/francais-monolingue"; style="font-weight: bold;">FR: LAROUSSE DICTIONNAIRE DE FRANÇAIS<br><img src="larousse.jpg"; style="border-radius: 15px; position: center; width: 200px;"></a></li>
-  <li><a href="https://www.duden.de/woerterbuch"; style="font-weight: bold;">DE: DUDEN Wörter­buch<br><img src="duden.jpg"; style="border-radius: 15px; position: center; width: 200px;"></a></li>	
-<li><a href="https://gramota.ru/biblioteka/slovari/bolshoj-tolkovyj-slovar"; style="font-weight: bold;">RU: Грамота(będzie działać, jak Rosja przestanie odstawiać cyrki)<br><img src="gramota.jpg"; style="border-radius: 15px; position: center; width: 200px;"></a></li>
-</ol>
-</div>
+
+        </td>
+<!-- RZĄD 2: PRAWO -->
+ <td>
+<a href="https://www.larousse.fr/dictionnaires/francais-monolingue"; style="font-weight: bold;">FR: LAROUSSE DICTIONNAIRE DE FRANÇAIS<br><img src="larousse.jpg"; style="border-radius: 15px; position: center; width: 200px;"></a>
+<br>
+<a href="https://pl.pons.com/t%C5%82umaczenie"; style="font-weight: bold;">
+Słownik Wielojęzykowy<br><img src="pons.jpg"; style="border-radius: 15px; position: center; width: 200px;"></a>
+
+        </td>
+    </tr>
+<!-- RZĄD 3: DÓŁ -->
+    <tr>
+        <td colspan="12">
+           <a href="https://www.duden.de/woerterbuch"; style="font-weight: bold;">DE: DUDEN Wörter­buch<br><img src="duden.jpg"; style="border-radius: 15px; position: center; width: 200px;"></a>
+<a href="https://gramota.ru/biblioteka/slovari/bolshoj-tolkovyj-slovar"; style="font-weight: bold;">RU: Грамота(będzie działać, jak Rosja przestanie odstawiać cyrki)<br><img src="gramota.jpg"; style="border-radius: 15px; position: center; width: 200px;"></a>
+
+
+        </td>
+    </tr>    
+
+</table>
 <hr>
 <footer>
 <p style="text-align: center">Strona w rozbudowie (jak nie zapomnę)</p>
