@@ -12,6 +12,39 @@ Wiesia in the way">
 <title>Strona główna</title>
 <style>
 
+.site-nav {
+	height:20px;
+	width:100%;
+	background: #4e5279;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.site-menu-trigger {
+	border: 0;
+	border-radius: 5px;
+	background: #ffffff;
+}
+
+.site-menu {
+	diplay: flex;
+	box-sizing: border-box;
+	position: absolute;
+	top: 20px;
+	right: 0;
+	height: 100%;
+	width: 300px;
+	background: #34b399;
+}
+
+.site-menu ul {
+
+}
+
+
 h1 {
 text-shadow: 2px 2px 5px white;
 }
@@ -36,22 +69,49 @@ footer {
 </style>
 <link rel="icon" type="image/x-icon" href="stronagłównatło.ico"></link>
 </head>
-<h1 style="background-color: green; text-align: center;">Strona dla wielojęzycznych</h1>
-<h6>
-<table style="margin: 0 auto; text-align:center; font-size:20px">
-<tr>
-<td><a href="strona_główna.html" style="text-decoration:none;">Strona Główna</td>
-<td><a href="słownik.html" style="text-decoration:none;">Słownik</a></td>
-<td><a href="książki.html" style="text-decoration:none;">Książki</a></td>
-<td><a href="gry.html" style="text-decoration:none;">Gry</a></td>
-<td><a href="utwory_muzyczne.html" style="text-decoration:none;">Utwory Muzyczne</a></td>
-<td><a href="kot.html" style="text-decoration:none;">Kot</a></td>
-</tr>
-</table>
-</h6>
+
 
 
 <body style="background-image: url('https://wallpaperaccess.com/full/90278.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+
+<nav class="site-nav">
+	<button class="site-nav-trigger">Menu</button>
+	<div class="site-menu">
+	 <ul>
+	  <li>
+	   <a href="#strona-główna">
+	    Strona główna
+	   </a>
+	  </li>
+	  <li>
+	   <a href="#utwory-muzyczne">
+	    Utwory Muzyczne
+	   </a>
+	  </li>
+    	  <li>
+	   <a href="#słownik">
+	    Słownik
+	   </a>
+	  </li>
+	  <li>
+	   <a href="#książki">
+	    Książki
+	   </a>
+	  </li>
+	  <li>
+	   <a href="#gry">
+	    Gry
+	   </a>
+	  </li>
+	  <li>
+	   <a href="#kot">
+	    Kot
+	   </a>
+	  </li>
+	</ul>
+       </div>
+</nav>
+
 
 
 
@@ -73,6 +133,26 @@ Name: <input type="text" name="name">
 <footer>
 <p style="text-align: center">Strona w rozbudowie (jak nie zapomnę)</p>
 </footer>
+
+
+
+
+
+<!-- <h1 style="background-color: green; text-align: center;">Strona dla wielojęzycznych</h1>
+<h6>
+<table style="margin: 0 auto; text-align:center; font-size:20px">
+<tr>
+<td><a href="strona_główna.html" style="text-decoration:none;">Strona Główna</td>
+<td><a href="słownik.html" style="text-decoration:none;">Słownik</a></td>
+<td><a href="książki.html" style="text-decoration:none;">Książki</a></td>
+<td><a href="gry.html" style="text-decoration:none;">Gry</a></td>
+<td><a href="utwory_muzyczne.html" style="text-decoration:none;">Utwory Muzyczne</a></td>
+<td><a href="kot.html" style="text-decoration:none;">Kot</a></td>
+</tr>
+</table>
+</h6> -->
+
+
 
 
 </body>
