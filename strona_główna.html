@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="HTML, CSS">
+<meta name="description" content="
+Wiesia oł oł
+Just a little loko
+Wiesia akapulko
+Wiesia in the way">
+<title>Strona główna</title>
+<style>
+body {
+  padding; 0;
+  margin: 0;
+  overflow: hidden;
+  background: url('https://wallpaperaccess.com/full/90278.jpg');
+}
+
+.site-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 20px;
+  width: 100%;
+  background: #4a4d6d;
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+}
+
+.side-menu-trigger {
+  border: 0;
+  border-radius: 5px;
+  background: #ffffff;
+  
+}
+
+.side-menu {
+  display: flex;
+  box-sizing: border-box;
+  position: absolute;
+  height: 100%;
+  width: 300px;
+  top: 20px;
+  right: -300px;
+  padding: 0;
+  background: url('azul.jpg');
+  transition: 0.3s transform ease-in-out;
+}
+
+.side-menu ul {
+  position: absolute;
+  display: flex;
+  height: calc(100% - 20px);
+  flex-wrap: wrap;
+  margin: 0 10px;
+  padding: 0;
+  list-style-type: none;
+  align-content: flex-start
+}
+
+.side-menu ul li {
+  display: flex;
+  height: 30px;
+  background: #ffffff;
+  flex-basis: 100%;
+  margin-top: 20px;
+  color: #696e9e;
+  border-radius: 5px;
+  overflow: hidden;
+  
+}
+
+.side-menu ul li a {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.side-menu-trigger:focus ~ .side-menu, .side-menu:hover {
+  transform: translateX(-300px); 
+}
+</style>
+  <title>
+    Rozsuwane menu boczne w samym CSS 
+  </title>
+</head>
+<body>
+  <nav class="site-nav">
+    <button class="side-menu-trigger">Menu</button>
+    <aside class="side-menu">
+      <ul>
+        <li>
+          <a href="słownik.html">
+            Słownik
+          </a>
+        </li>
+        <li>
+          <a href="utwory_muzyczne.html">
+            Utwory muzyczne
+          </a>
+        </li>
+        <li>
+          <a href="książki.html">
+            Książki
+          </a>
+        </li>
+        <li>
+          <a href="gry.html">
+            Gry
+          </a>
+        </li>
+        <li>
+          <a href="kot.html">
+            Kot
+          </a>
+        </li>
+      </ul>
+  </aside>
+  </nav>
+</body>
+</html>
