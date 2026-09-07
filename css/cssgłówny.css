@@ -1,0 +1,27 @@
+/* W3schools css
+CSS Introduction, Syntax, Grouping Selectors(tutaj teraz jestem!)
+
+*/
+
+body {
+    background-image: url('cieplewygazowanepiwo.jpg');
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+#para1 {
+    text-decoration: underline;
+}
+
+.center {
+    text-align: center;
+    color: red;
+}
