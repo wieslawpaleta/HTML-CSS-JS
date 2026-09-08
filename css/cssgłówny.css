@@ -1,16 +1,27 @@
 /* W3schools css
-CSS Introduction, Syntax, Grouping Selectors(tutaj teraz jestem!)
+CSS Introduction, Syntax, Selectors, Grouping Selectors, Universal Selector, Selectors Code Challenge,
+ How To Add CSS, How To Add Internal CSS, Multiple Style Sheets & Cascading Order,
 
 */
 
 body {
     background-image: url('cieplewygazowanepiwo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
-h1 {
-    color: black;
+* {
+    text-shadow: 0.1em 0.1em 0.2em rgb(204, 248, 5);
+}
+
+h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
+
+/* h1 {
+    text-align: right;
+} */
 
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -24,4 +35,9 @@ p {
 .center {
     text-align: center;
     color: red;
+}
+
+#plaża {
+    text-align: left;
+    color:hsl(182, 37%, 38%)
 }
