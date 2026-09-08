@@ -1,10 +1,11 @@
 <!--HTML W3Schools:
 Introduction, Introduction Exercises, Basic Examples, Basic Exercises, Basic Code Challenge,
-HTML Elements Exercises, Attributes(tu jestem teraz)
+HTML Elements Exercises, Attributes, Attributes Exercises, Attributes Code Challenge, 
+Headings, Headings Exercises, Headings Code Challenge, Paragraphs (tu teraz jestem)
 -->
 
 <!--JavaScript W3Schools:
-JavaScript Introduction(tu jestem teraz, przerób kod z żarówką)
+JavaScript, Where To, Introduction(tu jestem teraz, przerób kod z żarówką)
 -->
 
 
@@ -16,24 +17,45 @@ JavaScript Introduction(tu jestem teraz, przerób kod z żarówką)
 <meta charset="UTF-8">
 <title>Strona Główna</title>
 <link rel="stylesheet" href="../css/cssgłówny.css">
+<style>
 
+.kiełbasawyborcza {
+    color: maroon;
+}
+
+</style>
 </head>
 <body>
 
-<h1>Spot Wyborczy Domino Jachasia</h1>
+<h1 style="font-size:60px; color: red;">Spot Wyborczy Domino Jachasia</h1>
+<h1 style="color:red;">Spot Wyborczy Domino Jachasia</h1>
+<h2 style="color:red;">Spot Wyborczy Domino Jachasia</h2>
+<h3 style="color:red;">Spot Wyborczy Domino Jachasia</h3>
+<h4 style="color:red;">Spot Wyborczy Domino Jachasia</h4>
+<h5 style="color:red;">Spot Wyborczy Domino Jachasia</h5>
+<h6 style="color:red;">Spot Wyborczy Domino Jachasia</h6>
 <p>Słońce</p>
 <p>Plaża</p>
-<h6>Ciepłe wygazowane piwo</h6>
+<p title="Mocny amper">Ciepłe wygazowane piwo</p>
 
 <a href="https://github.com/wieslawpaleta/Strona-Html">Tutaj!
 <img src="kuń.png" alt="Wspaniały obrazek" width=""104" height="142"></a>
 
-<p>jak można się spodziewać, można tam znaleźć różne projekty.<br>Na przykład programy: Python, Java, C++, bazy danych SQL, strony HTML/CSS/JavaScript</p>
+<h1 class="kiełbasawyborcza">jak można się spodziewać, można tam znaleźć różne projekty.<br>Na przykład programy: Python, Java, C++, bazy danych SQL, strony HTML/CSS/JavaScript</h1>
 <a href="https://pixabay.com/photos/beach-paradise-island-palm-trees-1761410/">
-<img src="https://pixabay.com/images/download/walkerssk-beach-1761410_1920.jpg" alt="Wspaniała plaża" width="142" height="104"></a>
+<img src="https://cdn.discordapp.com/attachments/1306267271336820851/1546920071304052846/walkerssk-beach-1761410_1920.jpg?ex=6aa18915&is=6aa03795&hm=b1b654e58c7f720bc23ce40a7e757908e2229877444ed11661b4ffe14a9e6378" alt="Wspaniała plaża" width="300" height="200">Rajska plaża</a>
 
 <p id="demo">Moja obietnica!</p>
 <button type="button" onclick='document.getElementById("demo").innerHTML = "Średnia hawajska dla każdego!"'>Kliknij tu!</button>
+
+<p>Czy to pies czy koń?</p>
+
+
+<button onclick="document.getElementById('myImage').src='kuń7.jpeg'">Pies</button>
+
+<img id="myImage" src="pies.png" style="width:200px">
+
+<button onclick="document.getElementById('myImage').src='pies.png'">Koń</button>
 
 </body>
 
