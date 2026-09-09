@@ -1,11 +1,13 @@
 <!--HTML W3Schools:
 Introduction, Introduction Exercises, Basic Examples, Basic Exercises, Basic Code Challenge,
 HTML Elements Exercises, Attributes, Attributes Exercises, Attributes Code Challenge, 
-Headings, Headings Exercises, Headings Code Challenge, Paragraphs (tu teraz jestem)
+Headings, Headings Exercises, Headings Code Challenge, Paragraphs, Paragraphs Exercises,
+Paragraphs Code Challenge, Styles, Styles Exercises, Styles Code Challenge, Text Formatting,
+Formatting Exercises, Formatting Code Challenge, Quotation and Citation Elements (tu teraz jestem)
 -->
 
 <!--JavaScript W3Schools:
-JavaScript, Where To, Introduction(tu jestem teraz, przerób kod z żarówką)
+JavaScript, Where To, Introduction, Where To (tu jestem teraz, przerób kod z żarówką)
 -->
 
 
@@ -23,20 +25,30 @@ JavaScript, Where To, Introduction(tu jestem teraz, przerób kod z żarówką)
     color: maroon;
 }
 
+/* p {
+    font-size: 25%;
+} */
+
 </style>
+<!-- <link rel="stylesheet" href="../css/cssgłówny.css"> -->
 </head>
+
+<!-- żeby poćwiczyć style -->
+<!-- <body style="background-color:powderblue;"></body> -->
+
 <body>
 
-<h1 style="font-size:60px; color: red;">Spot Wyborczy Domino Jachasia</h1>
-<h1 style="color:red;">Spot Wyborczy Domino Jachasia</h1>
-<h2 style="color:red;">Spot Wyborczy Domino Jachasia</h2>
-<h3 style="color:red;">Spot Wyborczy Domino Jachasia</h3>
-<h4 style="color:red;">Spot Wyborczy Domino Jachasia</h4>
-<h5 style="color:red;">Spot Wyborczy Domino Jachasia</h5>
-<h6 style="color:red;">Spot Wyborczy Domino Jachasia</h6>
-<p>Słońce</p>
-<p>Plaża</p>
-<p title="Mocny amper">Ciepłe wygazowane piwo</p>
+<h1 style="font-size:60px; color: tomato; border:2px solid lightgoldenrodyellow">Spot Wyborczy Domino Jachasia</h1>
+<h1 style="color:orange; border:2px solid rgb(240, 10, 136);">Spot Wyborczy Domino Jachasia</h1>
+<h2 style="color:dodgerblue; border:2px solid #37ee09;">Spot Wyborczy Domino Jachasia</h2>
+<h3 style="color:mediumseagreen; border:2px solid hsl(190, 82%, 15%);">Spot Wyborczy Domino Jachasia</h3>
+<h4 style="color:gray; border:2px solid rgba(240, 10, 136, 0.2);">Spot Wyborczy Domino Jachasia</h4>
+<h5 style="color:slateblue; border:2px solid hsla(140, 53%, 70%, 0.322);">Spot Wyborczy Domino Jachasia</h5>
+<h6 style="color:violet; border:2px solid rgb(0, 0, 0);">Spot Wyborczy Domino Jachasia</h6>
+<hr>
+<p><ins>Słońce</ins></p>
+<p><sup>Plaża</sup></p>
+<p title="Mocny amper">Ciepłe <sub>wygazowane</sub> piwo</p>
 
 <a href="https://github.com/wieslawpaleta/Strona-Html">Tutaj!
 <img src="kuń.png" alt="Wspaniały obrazek" width=""104" height="142"></a>
@@ -45,10 +57,16 @@ JavaScript, Where To, Introduction(tu jestem teraz, przerób kod z żarówką)
 <a href="https://pixabay.com/photos/beach-paradise-island-palm-trees-1761410/">
 <img src="https://cdn.discordapp.com/attachments/1306267271336820851/1546920071304052846/walkerssk-beach-1761410_1920.jpg?ex=6aa18915&is=6aa03795&hm=b1b654e58c7f720bc23ce40a7e757908e2229877444ed11661b4ffe14a9e6378" alt="Wspaniała plaża" width="300" height="200">Rajska plaża</a>
 
-<p id="demo">Moja obietnica!</p>
-<button type="button" onclick='document.getElementById("demo").innerHTML = "Średnia hawajska dla każdego!"'>Kliknij tu!</button>
+<p id="demo"><small>Moja</small> <del>obietnica!</del></p>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Średnia hawajska dla każdego!"; document.getElementById("demo").style.fontSize = "24px"'>Kliknij tu!</button>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Średnia hawajska dla każdego!"; document.getElementById("demo").style.display = "none"'>Kliknij tu!</button>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Pstryk! 0 0 0"; document.getElementById("demo").style.display = "block"'>Kliknij tu!</button>
+<p><em>Czy</em> <mark>to</mark> <b>pies</b> <i>czy</i> <strong>koń?</strong></p>
 
-<p>Czy to pies czy koń?</p>
+
+<!-- <script>
+document.getElementById("demo").innerHTML = "Włóż okulary 3D";    
+</script> -->
 
 
 <button onclick="document.getElementById('myImage').src='kuń7.jpeg'">Pies</button>
@@ -56,6 +74,11 @@ JavaScript, Where To, Introduction(tu jestem teraz, przerób kod z żarówką)
 <img id="myImage" src="pies.png" style="width:200px">
 
 <button onclick="document.getElementById('myImage').src='pies.png'">Koń</button>
+
+<pre style="text-align: center; font-family:Cambria; font-size:160%;">
+Potężna wichura, łamiąc duże drzewa,
+trzciną zaledwie tylko kołysze.
+</pre>
 
 </body>
 
