@@ -1,14 +1,14 @@
 /* W3schools css
 CSS Introduction, Syntax, Selectors, Grouping Selectors, Universal Selector, Selectors Code Challenge,
- How To Add CSS, How To Add Internal CSS, Multiple Style Sheets & Cascading Order,
+ How To Add CSS, How To Add Internal CSS, Multiple Style Sheets & Cascading Order, How To Code Challenge,
+Comments, Errors, Colors, RGB and RGBA Colors (tu jestem teraz!) 
 
 */
 
 body {
     background-image: url('cieplewygazowanepiwo.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: cover;   
 }
 
 * {
