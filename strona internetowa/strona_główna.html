@@ -12,150 +12,181 @@ Wiesia in the way">
 <title>Strona główna</title>
 <style>
 
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background: url('https://wallpaperaccess.com/full/90278.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+}
+
+
 .site-nav {
-	height:20px;
-	width:100%;
-	background: #4e5279;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	padding: 10px;
-	box-sizing: border-box;
+  position: absolute; 
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); 
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  width: max-content; 
+  min-width: 100%; 
+  background: #4a4d6d;
+  z-index: 100;
 }
 
-.site-menu-trigger {
-	border: 0;
-	border-radius: 5px;
-	background: #ffffff;
+.side-menu-trigger {
+  border: 0;
+  border-radius: 5px;
+  background: #ffffff; 
+  margin: auto;
+  cursor: pointer;
 }
 
-.site-menu {
-	diplay: flex;
-	box-sizing: border-box;
-	position: absolute;
-	top: 20px;
-	right: 0;
-	height: 100%;
-	width: 300px;
-	background: #34b399;
-}
-
-.site-menu ul {
-
+.test {
+  height: 50px;
+  width: 300px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 
-h1 {
-text-shadow: 2px 2px 5px white;
-}
-
-.liste-emoji li::marker {
-	content: "🌍";
-	font-size: 1.2em;
-}
-
-a:hover {color:red}
-
-a {
-font-family: 'Lucida Console', monospace;
-}
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+.side-menu {
+  display: none; 
+  box-sizing: border-box;
   width: 100%;
-  background-color: #333;
+  padding: 0;
+  background: #31334b;
+  margin-top: 10px;
+}
+
+.side-menu ul {
+  display: flex;
+  flex-direction: column; 
+  width: 98%;
+  margin: auto;
+  padding: 10px;
+  list-style-type: none;
+}
+
+.side-menu ul li {
+  display: flex;
+  height: 40px;
+  background: #ffffff;
+  margin-bottom: 10px; 
+  color: #696e9e;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+
+}
+
+.side-menu ul li:last-child {
+  margin-bottom: 0; 
+}
+
+.side-menu ul li a {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: #696e9e;
+  align-items: center;  
+  justify-content: center; 
+}
+
+
+.side-menu-trigger:focus ~ .side-menu, 
+.side-menu:hover {
+  display: block;
+}
+
+li a, li a:visited {
+  text-decoration: none;
+  color: #333;
+}
+
+li a:hover, li a:focus{
+  background: #333;
+  color: whitesmoke;
+}
+
+.video-tlo {
+position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  object-fit: cover;
+  transform: translate(-50%, -50%)
+}
 
 </style>
-<link rel="icon" type="image/x-icon" href="stronagłównatło.ico"></link>
+  <title>
+    Rozsuwane menu boczne w samym CSS 
+  </title>
 </head>
-
-
-
-<body style="background-image: url('https://wallpaperaccess.com/full/90278.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
-
-<nav class="site-nav">
-	<button class="site-nav-trigger">Menu</button>
-	<div class="site-menu">
-	 <ul>
-	  <li>
-	   <a href="#strona-główna">
-	    Strona główna
-	   </a>
-	  </li>
-	  <li>
-	   <a href="#utwory-muzyczne">
-	    Utwory Muzyczne
-	   </a>
-	  </li>
-    	  <li>
-	   <a href="#słownik">
-	    Słownik
-	   </a>
-	  </li>
-	  <li>
-	   <a href="#książki">
-	    Książki
-	   </a>
-	  </li>
-	  <li>
-	   <a href="#gry">
-	    Gry
-	   </a>
-	  </li>
-	  <li>
-	   <a href="#kot">
-	    Kot
-	   </a>
-	  </li>
-	</ul>
-       </div>
-</nav>
-
-
-
-
-
-<form action="/action_page.php">
-<select name="książki">
-<option value="Sherlock">Sherlock</option>
-<option value="Lotr">Lotr</option>
-</select>
-</form>
-
-<form action="/action_page.php">
-Name: <input type="text" name="name">
-<input type="submit">
-</form>
-<button onclick="alert('Dziękuję!' style="width: 20%; height: 5%;")">Like</button>
-
-
-<footer>
-<p style="text-align: center">Strona w rozbudowie (jak nie zapomnę)</p>
-</footer>
-
-
-
-
-
-<!-- <h1 style="background-color: green; text-align: center;">Strona dla wielojęzycznych</h1>
-<h6>
-<table style="margin: 0 auto; text-align:center; font-size:20px">
+<body>
+<video autoplay muted loop playsinline class="video-tlo"; style="margin: auto">
+	<source src="tłostrtest.mp4" type="video/mp4">
+</video>
+  <nav class="site-nav">
+    <button class="side-menu-trigger test">Magiczny przycisk</button>
+    <aside class="side-menu">
+      <ul>
+        <li>
+          <a href="słownik.html">
+            Słownik
+          </a>
+        </li>
+        <li>
+          <a href="utwory_muzyczne.html">
+            Utwory muzyczne
+          </a>
+        </li>
+        <li>
+          <a href="książki.html">
+            Książki
+          </a>
+        </li>
+        <li>
+          <a href="gry.html">
+            Gry
+          </a>
+        </li>
+        <li>
+          <a href="kot.html">
+            Kot
+          </a>
+        </li>
+      </ul>
+  </aside>
+  </nav>
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100vh;">
+<table style="border: 1px solid black; background-color: white;">
 <tr>
-<td><a href="strona_główna.html" style="text-decoration:none;">Strona Główna</td>
-<td><a href="słownik.html" style="text-decoration:none;">Słownik</a></td>
-<td><a href="książki.html" style="text-decoration:none;">Książki</a></td>
-<td><a href="gry.html" style="text-decoration:none;">Gry</a></td>
-<td><a href="utwory_muzyczne.html" style="text-decoration:none;">Utwory Muzyczne</a></td>
-<td><a href="kot.html" style="text-decoration:none;">Kot</a></td>
+<td><pre style="font-size:25px;">
+public class Bienvenido {
+    public static void main(String[] args) {
+        String saludo = "¡Hola! ¿Cómo estás? Bienvenido al mundo de HTML.";
+        System.out.println(saludo);
+    }
+}
+</pre></td>
 </tr>
 </table>
-</h6> -->
-
-
-
-
+</div>
 </body>
-
-
 </html>
