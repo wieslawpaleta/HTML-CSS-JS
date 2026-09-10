@@ -1,9 +1,18 @@
 /* W3schools css
 CSS Introduction, Syntax, Selectors, Grouping Selectors, Universal Selector, Selectors Code Challenge,
  How To Add CSS, How To Add Internal CSS, Multiple Style Sheets & Cascading Order, How To Code Challenge,
-Comments, Errors, Colors, RGB and RGBA Colors (tu jestem teraz!) 
+Comments, Errors, Colors, RGB and RGBA Colors, HEX and HEXA Colors, HSL and HSLA Colors, Colors Code Challenge,
+Backgrounds, Background Image,  (tu jestem teraz!) 
 
 */
+
+
+/*
+body {
+    background-color: lightblue;
+}
+*/
+
 
 body {
     background-image: url('cieplewygazowanepiwo.jpg');
@@ -21,6 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* h1 {
     text-align: right;
+    color: #b58;
 } */
 
 p {
@@ -40,4 +50,8 @@ p {
 #plaża {
     text-align: left;
     color:hsl(182, 37%, 38%)
+}
+
+div {
+  background: rgba(0, 128, 0, 0.3)
 }
