@@ -3,7 +3,10 @@ Introduction, Introduction Exercises, Basic Examples, Basic Exercises, Basic Cod
 HTML Elements Exercises, Attributes, Attributes Exercises, Attributes Code Challenge, 
 Headings, Headings Exercises, Headings Code Challenge, Paragraphs, Paragraphs Exercises,
 Paragraphs Code Challenge, Styles, Styles Exercises, Styles Code Challenge, Text Formatting,
-Formatting Exercises, Formatting Code Challenge, Quotation and Citation Elements (tu teraz jestem)
+Formatting Exercises, Formatting Code Challenge, Quotation and Citation Elements, Quotations Exercises,
+Quotations Code Challenge, Comments, Comments Exercises, Comments Code Challenge, Colors, RGB and RGBA Colors,
+HEX and HEXA Colors, HSL and HSLA Colors, Colors Exercises, Colors Code Challenge, CSS Exercises,
+CSS Code Challenge,   (tu teraz jestem)
 -->
 
 <!--JavaScript W3Schools:
@@ -25,12 +28,23 @@ JavaScript, Where To, Introduction, Where To (tu jestem teraz, przerób kod z ż
     color: maroon;
 }
 
-/* p {
+/*p {
     font-size: 25%;
-} */
+    font-family: verdana;
+    font-size 300%;
+    border: 2px solid powderblue;
+    padding: 10px;
+    margin: 20px;
+
+}*/
 
 </style>
 <!-- <link rel="stylesheet" href="../css/cssgłówny.css"> -->
+ <script>
+function myFunction() {
+    document.getElementById("ser").innerHTML = "Nie zmieniłem swojego zdania.";
+}
+ </script>
 </head>
 
 <!-- żeby poćwiczyć style -->
@@ -46,6 +60,8 @@ JavaScript, Where To, Introduction, Where To (tu jestem teraz, przerób kod z ż
 <h5 style="color:slateblue; border:2px solid hsla(140, 53%, 70%, 0.322);">Spot Wyborczy Domino Jachasia</h5>
 <h6 style="color:violet; border:2px solid rgb(0, 0, 0);">Spot Wyborczy Domino Jachasia</h6>
 <hr>
+<p style="text-align: center;"><strong>WŁÓŻ OKULARY 3D!</strong></p>
+<audio src="stronamuzyka.m4a" autoplay muted loop controls style="display: block; margin: auto;"></audio>
 <p><ins>Słońce</ins></p>
 <p><sup>Plaża</sup></p>
 <p title="Mocny amper">Ciepłe <sub>wygazowane</sub> piwo</p>
@@ -61,6 +77,8 @@ JavaScript, Where To, Introduction, Where To (tu jestem teraz, przerób kod z ż
 <button type="button" onclick='document.getElementById("demo").innerHTML = "Średnia hawajska dla każdego!"; document.getElementById("demo").style.fontSize = "24px"'>Kliknij tu!</button>
 <button type="button" onclick='document.getElementById("demo").innerHTML = "Średnia hawajska dla każdego!"; document.getElementById("demo").style.display = "none"'>Kliknij tu!</button>
 <button type="button" onclick='document.getElementById("demo").innerHTML = "Pstryk! 0 0 0"; document.getElementById("demo").style.display = "block"'>Kliknij tu!</button>
+
+<div>
 <p><em>Czy</em> <mark>to</mark> <b>pies</b> <i>czy</i> <strong>koń?</strong></p>
 
 
@@ -75,11 +93,18 @@ document.getElementById("demo").innerHTML = "Włóż okulary 3D";
 
 <button onclick="document.getElementById('myImage').src='pies.png'">Koń</button>
 
-<pre style="text-align: center; font-family:Cambria; font-size:160%;">
+
+<pre style="text-align: center; font-family:Cambria; font-size:160%; color: #404040">
 Potężna wichura, łamiąc duże drzewa,
 trzciną zaledwie tylko kołysze.
 </pre>
-
+</div>
+<p id="grzyb" style="font-size: 20px; color: green; text-align: center;"></p>
+<script>
+document.getElementById("grzyb").innerHTML = "To nie jeste mój pierwszy JavaScript";
+</script>
+<p id="ser">Zmień moje zdanie!</p>
+<button type="button" onclick="myFunction()">Spróbuj!</button>
 </body>
 
 </html>
