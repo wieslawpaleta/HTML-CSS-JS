@@ -6,11 +6,11 @@ Paragraphs Code Challenge, Styles, Styles Exercises, Styles Code Challenge, Text
 Formatting Exercises, Formatting Code Challenge, Quotation and Citation Elements, Quotations Exercises,
 Quotations Code Challenge, Comments, Comments Exercises, Comments Code Challenge, Colors, RGB and RGBA Colors,
 HEX and HEXA Colors, HSL and HSLA Colors, Colors Exercises, Colors Code Challenge, CSS Exercises,
-CSS Code Challenge,   (tu teraz jestem)
+CSS Code Challenge, Links, Links - Different Colors (tu teraz jestem)
 -->
 
 <!--JavaScript W3Schools:
-JavaScript, Where To, Introduction, Where To (tu jestem teraz, przerób kod z żarówką)
+JavaScript, Where To, Introduction, Where To, Output (tu jestem teraz, przerób kod z żarówką)
 -->
 
 
@@ -60,17 +60,17 @@ function myFunction() {
 <h5 style="color:slateblue; border:2px solid hsla(140, 53%, 70%, 0.322);">Spot Wyborczy Domino Jachasia</h5>
 <h6 style="color:violet; border:2px solid rgb(0, 0, 0);">Spot Wyborczy Domino Jachasia</h6>
 <hr>
-<p style="text-align: center;"><strong>WŁÓŻ OKULARY 3D!</strong></p>
+<p style="text-align: center;" class="dotted"><strong>WŁÓŻ OKULARY 3D!</strong></p>
 <audio src="stronamuzyka.m4a" autoplay muted loop controls style="display: block; margin: auto;"></audio>
 <p><ins>Słońce</ins></p>
-<p><sup>Plaża</sup></p>
-<p title="Mocny amper">Ciepłe <sub>wygazowane</sub> piwo</p>
-
-<a href="https://github.com/wieslawpaleta/Strona-Html">Tutaj!
+<p><sup><a href="https://youtu.be/9_WxE8HiBTs?si=MSxn76t4glXMivxo&t=12" target="_parent">Plaża</a></sup></p>
+<p title="Mocny amper"><a href="https://www.youtube.com/watch?v=GMjTcL4ypW0" target="_top">Ciepłe <sub>wygazowane</sub> piwo</a></p>
+<button onclick="document.location='stronagłówna.html'">HTML Tutorial</button>
+<a href="https://github.com/wieslawpaleta/Strona-Html" target="_self">Tutaj!
 <img src="kuń.png" alt="Wspaniały obrazek" width=""104" height="142"></a>
 
 <h1 class="kiełbasawyborcza">jak można się spodziewać, można tam znaleźć różne projekty.<br>Na przykład programy: Python, Java, C++, bazy danych SQL, strony HTML/CSS/JavaScript</h1>
-<a href="https://pixabay.com/photos/beach-paradise-island-palm-trees-1761410/">
+<a href="https://pixabay.com/photos/beach-paradise-island-palm-trees-1761410/" target="_blank">
 <img src="https://cdn.discordapp.com/attachments/1306267271336820851/1546920071304052846/walkerssk-beach-1761410_1920.jpg?ex=6aa18915&is=6aa03795&hm=b1b654e58c7f720bc23ce40a7e757908e2229877444ed11661b4ffe14a9e6378" alt="Wspaniała plaża" width="300" height="200">Rajska plaża</a>
 
 <p id="demo"><small>Moja</small> <del>obietnica!</del></p>
@@ -105,6 +105,13 @@ document.getElementById("grzyb").innerHTML = "To nie jeste mój pierwszy JavaScr
 </script>
 <p id="ser">Zmień moje zdanie!</p>
 <button type="button" onclick="myFunction()">Spróbuj!</button>
+<button type="button" onclick="document.write(5 + 6)">Stop dla przycisków</button>
+<a href="mailto:someone@example.com">Do not send email</a>
+<p id="cebula" style="text-align: center;"></p>
+<script>
+document.getElementById("cebula").innerText = "Zagłosuj na Domina Jachasia!";
+document.write(5 + 6);
+</script>
 </body>
 
 </html>
