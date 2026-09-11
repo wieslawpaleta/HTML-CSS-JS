@@ -2,7 +2,8 @@
 CSS Introduction, Syntax, Selectors, Grouping Selectors, Universal Selector, Selectors Code Challenge,
  How To Add CSS, How To Add Internal CSS, Multiple Style Sheets & Cascading Order, How To Code Challenge,
 Comments, Errors, Colors, RGB and RGBA Colors, HEX and HEXA Colors, HSL and HSLA Colors, Colors Code Challenge,
-Backgrounds, Background Image,  (tu jestem teraz!) 
+Backgrounds, Background Image, Background Image Repeat, Background Attachment, Background Shorthand
+Backgrounds Code Challenge, Borders (tu jestem teraz!) 
 
 */
 
@@ -15,9 +16,14 @@ body {
 
 
 body {
-    background-image: url('cieplewygazowanepiwo.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;   
+    /* background-image: url('cieplewygazowanepiwo.jpg');
+   /* background-repeat: repeat-x;*/
+    /* background-repeat: no-repeat;
+    background-size: cover;    */
+    /*background-position:right top;*/
+    /*background-attachment: fixed;*/
+    /* background-attachment: scroll; */ 
+    background: #d9dd00 url("cieplewygazowanepiwo.jpg") no-repeat center ;
 }
 
 * {
@@ -37,6 +43,8 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
 }
+
+p.dotted {border-style: dotted;}
 
 #para1 {
     text-decoration: underline;
