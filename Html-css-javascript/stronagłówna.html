@@ -6,11 +6,11 @@ Paragraphs Code Challenge, Styles, Styles Exercises, Styles Code Challenge, Text
 Formatting Exercises, Formatting Code Challenge, Quotation and Citation Elements, Quotations Exercises,
 Quotations Code Challenge, Comments, Comments Exercises, Comments Code Challenge, Colors, RGB and RGBA Colors,
 HEX and HEXA Colors, HSL and HSLA Colors, Colors Exercises, Colors Code Challenge, CSS Exercises,
-CSS Code Challenge, Links, Links - Different Colors (tu teraz jestem)
+CSS Code Challenge, Links, Links - Different Colors, Links - Create Bookmarks (tu teraz jestem)
 -->
 
 <!--JavaScript W3Schools:
-JavaScript, Where To, Introduction, Where To, Output (tu jestem teraz, przerób kod z żarówką)
+JavaScript, Where To, Introduction, Where To, Output, Syntax (tu jestem teraz, przerób kod z żarówką)
 -->
 
 
@@ -38,6 +38,45 @@ JavaScript, Where To, Introduction, Where To, Output (tu jestem teraz, przerób 
 
 }*/
 
+a:link {
+    color:green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/*a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}*/
+
+
+
 </style>
 <!-- <link rel="stylesheet" href="../css/cssgłówny.css"> -->
  <script>
@@ -52,7 +91,7 @@ function myFunction() {
 
 <body>
 
-<h1 style="font-size:60px; color: tomato; border:2px solid lightgoldenrodyellow">Spot Wyborczy Domino Jachasia</h1>
+<h1 style="font-size:60px; color: tomato; border:2px solid lightgoldenrodyellow;">Spot Wyborczy Domino Jachasia</h1>
 <h1 style="color:orange; border:2px solid rgb(240, 10, 136);">Spot Wyborczy Domino Jachasia</h1>
 <h2 style="color:dodgerblue; border:2px solid #37ee09;">Spot Wyborczy Domino Jachasia</h2>
 <h3 style="color:mediumseagreen; border:2px solid hsl(190, 82%, 15%);">Spot Wyborczy Domino Jachasia</h3>
@@ -62,11 +101,11 @@ function myFunction() {
 <hr>
 <p style="text-align: center;" class="dotted"><strong>WŁÓŻ OKULARY 3D!</strong></p>
 <audio src="stronamuzyka.m4a" autoplay muted loop controls style="display: block; margin: auto;"></audio>
-<p><ins>Słońce</ins></p>
-<p><sup><a href="https://youtu.be/9_WxE8HiBTs?si=MSxn76t4glXMivxo&t=12" target="_parent">Plaża</a></sup></p>
+<p class="groove"><ins>Słońce</ins></p>
+<p><sup><a href="https://youtu.be/9_WxE8HiBTs?si=MSxn76t4glXMivxo&t=12" target="_parent"  class="outset">Plaża</a></sup></p>
 <p title="Mocny amper"><a href="https://www.youtube.com/watch?v=GMjTcL4ypW0" target="_top">Ciepłe <sub>wygazowane</sub> piwo</a></p>
 <button onclick="document.location='stronagłówna.html'">HTML Tutorial</button>
-<a href="https://github.com/wieslawpaleta/Strona-Html" target="_self">Tutaj!
+<a href="https://github.com/wieslawpaleta/Strona-Html" target="_self" class="inset">Tutaj!
 <img src="kuń.png" alt="Wspaniały obrazek" width=""104" height="142"></a>
 
 <h1 class="kiełbasawyborcza">jak można się spodziewać, można tam znaleźć różne projekty.<br>Na przykład programy: Python, Java, C++, bazy danych SQL, strony HTML/CSS/JavaScript</h1>
@@ -79,7 +118,7 @@ function myFunction() {
 <button type="button" onclick='document.getElementById("demo").innerHTML = "Pstryk! 0 0 0"; document.getElementById("demo").style.display = "block"'>Kliknij tu!</button>
 
 <div>
-<p><em>Czy</em> <mark>to</mark> <b>pies</b> <i>czy</i> <strong>koń?</strong></p>
+<p class="double"><em>Czy</em> <mark>to</mark> <b>pies</b> <i>czy</i> <strong>koń?</strong></p>
 
 
 <!-- <script>
@@ -94,7 +133,7 @@ document.getElementById("demo").innerHTML = "Włóż okulary 3D";
 <button onclick="document.getElementById('myImage').src='pies.png'">Koń</button>
 
 
-<pre style="text-align: center; font-family:Cambria; font-size:160%; color: #404040">
+<pre style="text-align: center; font-family:Cambria; font-size:160%; color: #404040"  class="ridge">
 Potężna wichura, łamiąc duże drzewa,
 trzciną zaledwie tylko kołysze.
 </pre>
@@ -103,14 +142,18 @@ trzciną zaledwie tylko kołysze.
 <script>
 document.getElementById("grzyb").innerHTML = "To nie jeste mój pierwszy JavaScript";
 </script>
-<p id="ser">Zmień moje zdanie!</p>
+<p id="ser" class="solid">Zmień moje zdanie!</p>
 <button type="button" onclick="myFunction()">Spróbuj!</button>
 <button type="button" onclick="document.write(5 + 6)">Stop dla przycisków</button>
+<button onclick="window.print()">Imprimer cette page</button>
 <a href="mailto:someone@example.com">Do not send email</a>
-<p id="cebula" style="text-align: center;"></p>
+<p id="cebula" style="text-align: center;" class="dotted"></p>
 <script>
 document.getElementById("cebula").innerText = "Zagłosuj na Domina Jachasia!";
 document.write(5 + 6);
+window.alert(5 + 6);
+alert("I myk!");
+console.log(10 + 11);
 </script>
 </body>
 
