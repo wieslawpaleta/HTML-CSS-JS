@@ -3,7 +3,7 @@ CSS Introduction, Syntax, Selectors, Grouping Selectors, Universal Selector, Sel
  How To Add CSS, How To Add Internal CSS, Multiple Style Sheets & Cascading Order, How To Code Challenge,
 Comments, Errors, Colors, RGB and RGBA Colors, HEX and HEXA Colors, HSL and HSLA Colors, Colors Code Challenge,
 Backgrounds, Background Image, Background Image Repeat, Background Attachment, Background Shorthand
-Backgrounds Code Challenge, Borders (tu jestem teraz!) 
+Backgrounds Code Challenge, Borders, Border Width, Border Color, Border Sides (tu jestem teraz!) 
 
 */
 
@@ -44,11 +44,11 @@ p {
     font-size: 20px;
 }
 
-p.dotted {border-style: dotted;}
+p.dotted {border-style: dotted; border-width: 10px 25px 5px 30px; border-color: red green blue gray;}
 p.dashed {border-style: dashed;}
-p.solid {border-style: solid;}
-p.double {border-style: double;}
-p.groove {border-style: groove;}
+p.solid {border-style: solid; border-width: thick; border-color: #ff0000;}
+p.double {border-style: double; border-width: medium; border-color: rgba(0, 128, 0, 0.3);}
+p.groove {border-style: groove; border-color: hsl(0, 66%, 20%);}
 pre.ridge {border-style: ridge;}
 a.inset {border-style: inset;}
 a.outset {border-style: outset;}
