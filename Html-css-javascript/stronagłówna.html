@@ -7,7 +7,7 @@ Formatting Exercises, Formatting Code Challenge, Quotation and Citation Elements
 Quotations Code Challenge, Comments, Comments Exercises, Comments Code Challenge, Colors, RGB and RGBA Colors,
 HEX and HEXA Colors, HSL and HSLA Colors, Colors Exercises, Colors Code Challenge, CSS Exercises,
 CSS Code Challenge, Links, Links - Different Colors, Links - Create Bookmarks, Links Exercises, Links Code Challenge,
-Images, Image Maps (tu teraz jestem)
+Images, Image Maps, Background Images (tu teraz jestem)
 -->
 
 <!--JavaScript W3Schools:
@@ -133,11 +133,14 @@ document.getElementById("demo").innerHTML = "Włóż okulary 3D";
 
 <button onclick="document.getElementById('myImage').src='pies.png'">Koń</button>
 
-<img src="maupa.jpeg" alt="ŚmiesznaMałpa" usemap="#maupamap" width="200" style="padding: 10px; margin: center;">
+<img src="maupa.jpeg" alt="ŚmiesznaMałpa" usemap="#maupamap" style="padding: 10px;" class="ex1">
 
-<map name="maupamap"></map>
-    <area shape="rect" coords=""
-
+<map name="maupamap">
+    <area target="_blank" alt="maupa" title="maupa" href="https://www.youtube.com/watch?v=XfqOB4hvxlY" coords="114,224,64,193" shape="rect">
+    <area target="_parent" alt="chce" title="chce" href="https://www.youtube.com/watch?v=XfqOB4hvxlY" coords="58,147,23" shape="circle">
+    <area target="_self" alt="banana" title="banana" href="https://www.youtube.com/watch?v=XfqOB4hvxlY" coords="87,129,92,153,105,164,143,158,134,121,104,118" shape="poly">
+    <area target="_top" alt="!" title="!" href="stronagłówna.html" coords="34,45,74,21,145,15,174,43,125,29,89,32" shape="poly" onclick="mojaFunkcja()">
+</map>
 <pre style="text-align: center; font-family:Cambria; font-size:160%; color: #404040"  class="ridge">
 Potężna wichura, łamiąc duże drzewa,
 trzciną zaledwie tylko kołysze.
@@ -145,7 +148,7 @@ trzciną zaledwie tylko kołysze.
 </div>
 <p id="grzyb" style="font-size: 20px; color: green; text-align: center;"></p>
 <script>
-document.getElementById("grzyb").innerHTML = "To nie jeste mój pierwszy JavaScript";
+document.getElementById("grzyb").innerHTML = "To nie jest mój pierwszy JavaScript";
 </script>
 <p id="ser" class="solid">Zmień moje zdanie!</p>
 <button type="button" onclick="myFunction()">Spróbuj!</button>
@@ -153,13 +156,16 @@ document.getElementById("grzyb").innerHTML = "To nie jeste mój pierwszy JavaScr
 <button onclick="window.print()">Imprimer cette page</button>
 <a href="mailto:someone@example.com">Do not send email</a>
 <p id="cebula" style="text-align: center;" class="dotted"></p>
-<script>
+<script> function mojaFunkcja() {
+    alert("Uhuhuhu!")
+} 
 document.getElementById("cebula").innerText = "Zagłosuj na Domina Jachasia!";
 document.write(5 + 6);
 //window.alert(5 + 6);
 //alert("I myk!");
 console.log(10 + 11);
 </script>
+
 </body>
 
 </html>
