@@ -7,11 +7,13 @@ Formatting Exercises, Formatting Code Challenge, Quotation and Citation Elements
 Quotations Code Challenge, Comments, Comments Exercises, Comments Code Challenge, Colors, RGB and RGBA Colors,
 HEX and HEXA Colors, HSL and HSLA Colors, Colors Exercises, Colors Code Challenge, CSS Exercises,
 CSS Code Challenge, Links, Links - Different Colors, Links - Create Bookmarks, Links Exercises, Links Code Challenge,
-Images, Image Maps, Background Images (tu teraz jestem)
+Images, Image Maps, Background Images, <picture> Element, Images Exercises, Images Code Challenge, Project: Personal Page, Favicon,
+Favicon Exercises, Page Title, Title Exercises, Tables, Table Borders, Table Padding & Spacing,
+CSS Outline Code Challenge, (tu teraz jestem)
 -->
 
 <!--JavaScript W3Schools:
-// JavaScript, Where To, Introduction, Where To, Output, Syntax, Statements, Comments, Variables  (tu jestem teraz)
+// JavaScript, Where To, Introduction, Where To, Output, Syntax, Statements, Comments, Variables, Let, Const, Datatypes, Operators, Arithmetic   (tu jestem teraz)
 -->
 
 
@@ -21,8 +23,9 @@ Images, Image Maps, Background Images (tu teraz jestem)
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
-<title>Strona Główna</title>
+<title>Strona do nauki</title>
 <link rel="stylesheet" href="../css/cssgłówny.css">
+<link rel="icon" type="image/x-icon" href="maupa.jpeg">
 <style>
 
 .kiełbasawyborcza {
@@ -77,6 +80,17 @@ a:hover, a:active {
 }*/
 
 
+table, th, td {
+    border: 1px solid, black;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+th, td {
+    background-color: #96D4D4;
+}
+
+
 
 </style>
 <!-- <link rel="stylesheet" href="../css/cssgłówny.css"> -->
@@ -108,8 +122,12 @@ function myFunction() {
 <button onclick="document.location='stronagłówna.html'">HTML Tutorial</button>
 <a href="https://github.com/wieslawpaleta/Strona-Html" target="_self" class="inset">Tutaj!
 <img src="kuń.png" alt="Wspaniały obrazek" width=""104" height="142" style="float:left;"></a>
-
+<div class="div1">
 <h1 class="kiełbasawyborcza"><a href="#C4">jak można się spodziewać, można tam znaleźć różne projekty.<br>Na przykład programy: Python, Java, C++, bazy danych SQL, strony HTML/CSS/JavaScript</a></h1>
+</div>
+<div class="div2">
+<h1 class="kiełbasawyborcza"><a href="#C4">jak można się spodziewać, można tam znaleźć różne projekty.<br>Na przykład programy: Python, Java, C++, bazy danych SQL, strony HTML/CSS/JavaScript</a></h1>
+</div>
 <a href="https://pixabay.com/photos/beach-paradise-island-palm-trees-1761410/" target="_blank">
 <img src="https://cdn.discordapp.com/attachments/1306267271336820851/1546920071304052846/walkerssk-beach-1761410_1920.jpg?ex=6aa18915&is=6aa03795&hm=b1b654e58c7f720bc23ce40a7e757908e2229877444ed11661b4ffe14a9e6378" alt="Wspaniała plaża" width="300" height="200">Rajska plaża</a>
 
@@ -146,7 +164,7 @@ Potężna wichura, łamiąc duże drzewa,
 trzciną zaledwie tylko kołysze.
 </pre>
 </div>
-<p id="grzyb" style="font-size: 20px; color: green; text-align: center;"></p>
+<p id="grzyb" class="tlogrzyb" style="font-size: 20px; color: green; text-align: center;"></p>
 <script>
 document.getElementById("grzyb").innerHTML = "To nie jest mój pierwszy JavaScript";
 </script>
@@ -165,7 +183,43 @@ document.write(5 + 6);
 //alert("I myk!");
 console.log(10 + 11);
 </script>
-
+<div class="div3" style="display: flex;">
+<table style="width:50%">
+    <tr>
+        <th>Firma</th>
+        <th>Kontakt</th>
+        <th>Kraj</th>
+    </tr>
+    <tr>
+        <td>Galak Pizza</td>
+        <td>000</td>
+        <td>Galaktyka</td>
+    </tr>
+    <tr style ="height:50px">
+        <td>MugBonald</td>
+        <td>Gołąb pocztowy</td>
+        <td>Zjednoczone bamburgery</td>
+    </tr>
+</table>
+<table style="width:50%">
+    <caption>Jestem mądry!</caption>
+    <tr style="text-align: left;">
+        <th colspan="2">Firma/kontakt</th>
+        
+        <td>Kraj</td>
+    </tr>
+    <tr>
+        <th>Galak Pizza</th>
+        <td>000</td>
+        <td>Galaktyka</td>
+    </tr>
+    <tr style ="height:50px">
+        <th>MugBonald</th>
+        <td>Gołąb pocztowy</td>
+        <td>Zjednoczone bamburgery</td>
+    </tr>
+</table>
+</div>
 </body>
 
 </html>
