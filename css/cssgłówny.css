@@ -5,7 +5,9 @@ Comments, Errors, Colors, RGB and RGBA Colors, HEX and HEXA Colors, HSL and HSLA
 Backgrounds, Background Image, Background Image Repeat, Background Attachment, Background Shorthand
 Backgrounds Code Challenge, Borders, Border Width, Border Color, Border Sides, Shorthand Border Property,
 Rounded Borders, Borders Code Challenge, Margins, Margin Collapse, Margins Code Challenge, Padding,
-Padding and box-sizing, Padding Code Challenge, Height and Width, Min/Max Height and Width (tu jestem teraz!) 
+Padding and box-sizing, Padding Code Challenge, Height and Width, Min/Max Height and Width,
+Height and Width Code Challenge, Box Model, Box Model Code Challenge, Outline,
+Outline Width, Outline Color, Outline Shorthand, Outline Offset, Text Color, Text Alignment   (tu jestem teraz!) 
 
 */
 
@@ -25,7 +27,9 @@ body {
     /*background-position:right top;*/
     /*background-attachment: fixed;*/
     /* background-attachment: scroll; */ 
-    background: #d9dd00 url("cieplewygazowanepiwo.jpg") no-repeat center ;
+    background: #d9dd00 url("cieplewygazowanepiwo.jpg") no-repeat center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 * {
@@ -91,4 +95,30 @@ div {
 
 img.ex1 {
     margin-left: inherit;
+}
+
+.div1 {
+    max-width: 500px;
+    padding: 10px;
+    background-color: powderblue;
+}
+
+.div2 {
+    width: 500px;
+    padding: 10px;
+    background-color: powderblue;
+}
+
+.div3 {
+    width: 100%;
+    height: 100%px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+    outline: 3px solid rgb(0, 255, 55);
+    outline-offset: 5px;
+}
+
+.tlogrzyb {
+    background-color: rgba(255, 255, 255, 0.527);
 }
