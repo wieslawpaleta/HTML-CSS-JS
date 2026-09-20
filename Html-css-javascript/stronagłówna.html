@@ -9,11 +9,11 @@ HEX and HEXA Colors, HSL and HSLA Colors, Colors Exercises, Colors Code Challeng
 CSS Code Challenge, Links, Links - Different Colors, Links - Create Bookmarks, Links Exercises, Links Code Challenge,
 Images, Image Maps, Background Images, <picture> Element, Images Exercises, Images Code Challenge, Project: Personal Page, Favicon,
 Favicon Exercises, Page Title, Title Exercises, Tables, Table Borders, Table Padding & Spacing,
-CSS Outline Code Challenge, (tu teraz jestem)
+ Tables/Table Styling, Table Colgroup,  Tables Exercises, Tables Code Challenge, Lists  (tu teraz jestem)
 -->
 
 <!--JavaScript W3Schools:
-// JavaScript, Where To, Introduction, Where To, Output, Syntax, Statements, Comments, Variables, Let, Const, Datatypes, Operators, Arithmetic   (tu jestem teraz)
+// JavaScript, Where To, Introduction, Where To, Output, Syntax, Statements, Comments, Variables, Let, Const, Datatypes, Operators, Arithmetic, Assignment   (tu jestem teraz)
 -->
 
 
@@ -90,6 +90,17 @@ th, td {
     background-color: #96D4D4;
 }
 
+
+
+tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+tr:hover {background-color: #1cda1c69;}
 
 
 </style>
@@ -185,6 +196,9 @@ console.log(10 + 11);
 </script>
 <div class="div3" style="display: flex;">
 <table style="width:50%">
+<colgroup>
+  <col span="2" style="background-color: #000000">
+</colgroup>
     <tr>
         <th>Firma</th>
         <th>Kontakt</th>
@@ -219,6 +233,23 @@ console.log(10 + 11);
         <td>Zjednoczone bamburgery</td>
     </tr>
 </table>
+</div>
+<div style="display: flex;">
+    <ul style="background-color: #96D4D4;">
+        <li>Pitca</li>
+        <li>Gorący pies</li>
+        <li>Kuka-kula</li>
+    </ul>
+    <ol style="background-color: #96D4D4;"">
+        <li>Pitca</li>
+        <li>Gorący pies</li>
+        <li>Kuka-kula</li>
+    </ol>
+    <dl style="background-color: #96D4D4;"">
+        <dd>Pitca</dd>
+        <dd>Gorący pies</dd>
+        <dd>Kuka-kula</dd>
+    </dl>
 </div>
 </body>
 
