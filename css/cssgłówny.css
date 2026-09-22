@@ -8,8 +8,8 @@ Rounded Borders, Borders Code Challenge, Margins, Margin Collapse, Margins Code 
 Padding and box-sizing, Padding Code Challenge, Height and Width, Min/Max Height and Width,
 Height and Width Code Challenge, Box Model, Box Model Code Challenge, Outline,
 Outline Width, Outline Color, Outline Shorthand, Outline Offset, Text Color, Text Alignment, Text Decoration,
-Text Decoration Styles, Text/Text Transformation, Text/Text Spacing, Text\Text Shadow,
-   (tu jestem teraz!) 
+Text Decoration Styles, Text/Text Transformation, Text/Text Spacing, Text\Text Shadow, Text/Text Code Challenge,
+Fonts/Fonts, Fonts/Web Safe Fonts, Fonts/Font Fallbacks  (tu jestem teraz!) 
 
 */
 
@@ -144,6 +144,8 @@ h1 {
     text-decoration-color: #d9dd00; */
     text-decoration: overline #d9dd00 solid 10px;
     text-transform: uppercase;
+    color: white;
+    text-shadow: 0 0 25px blue, 0 0 5px rgb(22, 2, 2);;
 }
 
 h2 {
