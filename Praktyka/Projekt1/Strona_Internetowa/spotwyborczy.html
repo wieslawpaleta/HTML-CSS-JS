@@ -1,0 +1,294 @@
+<!--HTML W3Schools:
+Introduction, Introduction Exercises, Basic Examples, Basic Exercises, Basic Code Challenge,
+HTML Elements Exercises, Attributes, Attributes Exercises, Attributes Code Challenge, 
+Headings, Headings Exercises, Headings Code Challenge, Paragraphs, Paragraphs Exercises,
+Paragraphs Code Challenge, Styles, Styles Exercises, Styles Code Challenge, Text Formatting,
+Formatting Exercises, Formatting Code Challenge, Quotation and Citation Elements, Quotations Exercises,
+Quotations Code Challenge, Comments, Comments Exercises, Comments Code Challenge, Colors, RGB and RGBA Colors,
+HEX and HEXA Colors, HSL and HSLA Colors, Colors Exercises, Colors Code Challenge, CSS Exercises,
+CSS Code Challenge, Links, Links - Different Colors, Links - Create Bookmarks, Links Exercises, Links Code Challenge,
+Images, Image Maps, Background Images, <picture> Element, Images Exercises, Images Code Challenge, Project: Personal Page, Favicon,
+Favicon Exercises, Page Title, Title Exercises, Tables, Table Borders, Table Padding & Spacing,
+ Tables/Table Styling, Table Colgroup,  Tables Exercises, Tables Code Challenge, Lists, Lists/Unordered Lists,
+ Lists/Ordered Lists, Lists/Other Lists, Lists/Lists Exercises, Lists/Lists Code Challenge, Block & Inline/Block and Inline Elements
+Block & Inline/Block and Inline Exercises, Block & Inline/Block & Inline Code Challenge, Div/Div element Exercises, Div/Div Code Challenge,
+Classes/class Attribute, Classes/Classes Exercises, Classes/Classes Code Challenge, Id/id Attribute
+    (tu teraz jestem)
+-->
+
+<!--JavaScript W3Schools:
+// JavaScript, Where To, Introduction, Where To, Output, Syntax, Statements, Comments, Variables, Let, Const, Datatypes, Operators, Arithmetic, Assignment 
+// Operators/Comparison, Operators/Conditionals, // If/If else (tu jestem teraz)
+-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Strona do nauki</title>
+<link rel="stylesheet" href="../css/cssgłówny.css">
+<link rel="icon" type="image/x-icon" href="maupa.jpeg">
+<style>
+
+.kiełbasawyborcza {
+    color: maroon;
+}
+
+/*p {
+    font-size: 25%;
+    font-family: verdana;
+    font-size 300%;
+    border: 2px solid powderblue;
+    padding: 10px;
+    margin: 20px;
+
+}*/
+
+a:link {
+    color:green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/*a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}*/
+
+
+table, th, td {
+    border: 1px solid, black;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+th, td {
+    background-color: #96D4D4;
+}
+
+
+
+tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+tr:hover {background-color: #1cda1c69;}
+
+.note {
+  font-size: 120%;
+  color: red;
+  background-color: aliceblue;
+}
+
+
+</style>
+<!-- <link rel="stylesheet" href="../css/cssgłówny.css"> -->
+ <script>
+function myFunction() {
+    document.getElementById("ser").innerHTML = "Nie zmieniłem swojego zdania.";
+}
+ </script>
+</head>
+
+<!-- żeby poćwiczyć style -->
+<!-- <body style="background-color:powderblue;"></body> -->
+
+<body>
+<div>
+    <ul style="list-style-type: square;" class="ulnav">
+    <li class="linav"><a href="stronainternetowa/strona_główna.html">Strona Główna</a></li>
+    <li class="linav"><a href="stronainternetowa/gry.html">Gry</a></li>
+    <li class="linav"><a href="stronainternetowa/książki.html">Książki</a></li>
+    <li class="linav"><a href="stronainternetowa/słownik.html">Słownik</a></li>
+    <li class="linav"><a href="stronainternetowa/kot.html">Kot</a></li>
+    <li class="linav"><a href="stronainternetowa/utwory_muzyczne.html">Utwory muzyczne</a></li>
+    </ul>
+</div>
+<h1 style="font-size:60px; color: tomato; border:2px solid lightgoldenrodyellow;" id="C4">Spot Wyborczy Domino Jachasia</h1>
+<h1 style="color:orange; border:2px solid rgb(240, 10, 136);">Spot Wyborczy Domino Jachasia</h1>
+<h2 style="color:dodgerblue; border:2px solid #37ee09;">Spot Wyborczy Domino Jachasia</h2>
+<h3 style="color:mediumseagreen; border:2px solid hsl(190, 82%, 15%);">Spot Wyborczy Domino Jachasia</h3>
+<h4 style="color:gray; border:2px solid rgba(240, 10, 136, 0.2);">Spot Wyborczy Domino Jachasia</h4>
+<h5 style="color:slateblue; border:2px solid hsla(140, 53%, 70%, 0.322);">Spot Wyborczy Domino Jachasia</h5>
+<h6 style="color:violet; border:2px solid rgb(0, 0, 0);">Spot Wyborczy Domino Jachasia</h6>
+<hr>
+<p style="text-align: center;" class="dotted"><strong>WŁÓŻ OKULARY 3D!</strong></p>
+<audio src="stronamuzyka.m4a" autoplay muted loop controls style="display: block; margin: auto;"></audio>
+<p class="groove"><ins>Słońce</ins></p>
+<p><sup><a href="https://youtu.be/9_WxE8HiBTs?si=MSxn76t4glXMivxo&t=12" target="_parent"  class="outset">Plaża</a></sup></p>
+<p title="Mocny amper"><a href="https://www.youtube.com/watch?v=GMjTcL4ypW0" target="_top">Ciepłe <sub>wygazowane</sub> piwo</a></p>
+<button onclick="document.location='stronagłówna.html'">HTML Tutorial</button>
+<a href="https://github.com/wieslawpaleta/Strona-Html" target="_self" class="inset">Tutaj!
+<img src="kuń.png" alt="Wspaniały obrazek" width=""104" height="142" style="float:left;"></a>
+<div class="div1">
+<h1 class="kiełbasawyborcza"><a href="#C4">jak można się spodziewać, można tam znaleźć różne projekty.<br>Na przykład programy: Python, Java, C++, bazy danych SQL, strony HTML/CSS/JavaScript</a></h1>
+</div>
+<div class="div2">
+<h1 class="kiełbasawyborcza"><a href="#C4">jak można się spodziewać, można tam znaleźć różne projekty.<br>Na przykład programy: Python, Java, C++, bazy danych SQL, strony HTML/CSS/JavaScript</a></h1>
+</div>
+<a href="https://pixabay.com/photos/beach-paradise-island-palm-trees-1761410/" target="_blank">
+<img src="https://cdn.discordapp.com/attachments/1306267271336820851/1546920071304052846/walkerssk-beach-1761410_1920.jpg?ex=6aa18915&is=6aa03795&hm=b1b654e58c7f720bc23ce40a7e757908e2229877444ed11661b4ffe14a9e6378" alt="Wspaniała plaża" width="300" height="200">Rajska plaża</a>
+
+<p id="demo"><small>Moja</small> <del>obietnica!</del></p>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Średnia hawajska dla każdego!"; document.getElementById("demo").style.fontSize = "24px"'>Kliknij tu!</button>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Średnia hawajska dla każdego!"; document.getElementById("demo").style.display = "none"'>Kliknij tu!</button>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Pstryk! 0 0 0"; document.getElementById("demo").style.display = "block"'>Kliknij tu!</button>
+
+<div>
+<p class="double"><em>Czy</em> <mark>to</mark> <b>pies</b> <i>czy</i> <strong>koń?</strong></p>
+
+
+<!-- <script>
+document.getElementById("demo").innerHTML = "Włóż okulary 3D";    
+</script> -->
+
+
+<button onclick="document.getElementById('myImage').src='kuń7.jpeg'">Pies</button>
+
+<img id="myImage" src="pies.png" style="width:200px">
+
+<button onclick="document.getElementById('myImage').src='pies.png'">Koń</button>
+
+<img src="maupa.jpeg" alt="ŚmiesznaMałpa" usemap="#maupamap" style="padding: 10px;" class="ex1">
+
+<map name="maupamap">
+    <area target="_blank" alt="maupa" title="maupa" href="https://www.youtube.com/watch?v=XfqOB4hvxlY" coords="114,224,64,193" shape="rect">
+    <area target="_parent" alt="chce" title="chce" href="https://www.youtube.com/watch?v=XfqOB4hvxlY" coords="58,147,23" shape="circle">
+    <area target="_self" alt="banana" title="banana" href="https://www.youtube.com/watch?v=XfqOB4hvxlY" coords="87,129,92,153,105,164,143,158,134,121,104,118" shape="poly">
+    <area target="_top" alt="!" title="!" href="stronagłówna.html" coords="34,45,74,21,145,15,174,43,125,29,89,32" shape="poly" onclick="mojaFunkcja()">
+</map>
+<pre style="text-align: center; font-family:Cambria; font-size:160%; color: #404040"  class="ridge">
+Potężna wichura, łamiąc duże drzewa,
+trzciną zaledwie tylko kołysze.
+</pre>
+</div>
+<p id="grzyb" class="tlogrzyb" style="font-size: 20px; color: green; text-align: center;"></p>
+<script>
+document.getElementById("grzyb").innerHTML = "To nie jest mój pierwszy JavaScript";
+</script>
+<p id="ser" class="solid">Zmień moje zdanie!</p>
+<button type="button" onclick="myFunction()">Spróbuj!</button>
+<button type="button" onclick="document.write(5 + 6)">Stop dla przycisków</button>
+<button onclick="window.print()">Imprimer cette page</button>
+<a href="mailto:someone@example.com">Do not send email</a>
+<p id="cebula" style="text-align: center;" class="dotted"></p>
+<script> function mojaFunkcja() {
+    alert("Uhuhuhu!")
+} 
+document.getElementById("cebula").innerText = "Zagłosuj na Domina Jachasia!";
+document.write(5 + 6);
+//window.alert(5 + 6);
+//alert("I myk!");
+console.log(10 + 11);
+</script>
+<div class="div3" style="display: flex;">
+<table style="width:50%">
+<colgroup>
+  <col span="2" style="background-color: #000000">
+</colgroup>
+    <tr>
+        <th>Firma</th>
+        <th>Kontakt</th>
+        <th>Kraj</th>
+    </tr>
+    <tr>
+        <td>Galak Pizza</td>
+        <td>000</td>
+        <td>Galaktyka</td>
+    </tr>
+    <tr style ="height:50px">
+        <td>MugBonald</td>
+        <td>Gołąb pocztowy</td>
+        <td>Zjednoczone bamburgery</td>
+    </tr>
+</table>
+<table style="width:50%">
+    <caption>Jestem mądry!</caption>
+    <tr style="text-align: left;">
+        <th colspan="2">Firma/kontakt</th>
+        
+        <td>Kraj</td>
+    </tr>
+    <tr>
+        <th>Galak Pizza</th>
+        <td>000</td>
+        <td>Galaktyka</td>
+    </tr>
+    <tr style ="height:50px">
+        <th>MugBonald</th>
+        <td>Gołąb pocztowy</td>
+        <td>Zjednoczone bamburgery</td>
+    </tr>
+</table>
+</div>
+<div style="display: flex;">
+    <ul style="background-color: #96D4D4;">
+        <li>Pitca</li>
+        <li>Gorący pies</li>
+        <li>Kuka-kula</li>
+    </ul>
+    <ol style="background-color: #96D4D4;"">
+        <li>Pitca</li>
+        <li>Gorący pies</li>
+        <li>Kuka-kula</li>
+    </ol>
+    <dl style="background-color: #96D4D4;"">
+        <dd>Pitca</dd>
+        <dd>Gorący pies</dd>
+        <dd>Kuka-kula</dd>
+    </dl>
+</div>
+<div style="display: flex;">
+    <ol style="background-color: #96D4D4;" type="1">
+        <li>Pitca</li>
+    </ol>
+    <ol style="background-color: #96D4D4;" type="A">
+        <li>Pitca</li>
+    </ol>
+    <ol style="background-color: #96D4D4;" type="a">
+        <li>Pitca</li>
+    </ol>
+    <ol style="background-color: #96D4D4;" type="I" start="50">
+        <li>Pitca</li>
+    </ol>
+    <ol style="background-color: #96D4D4;" type="i">
+        <li>Pitca</li>
+    </ol>
+</div>
+<p id="ppp"> Jedyny i wspaniały<span class="note"> Span </span></p>
+</body>
+
+</html>
