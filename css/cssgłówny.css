@@ -9,7 +9,8 @@ Padding and box-sizing, Padding Code Challenge, Height and Width, Min/Max Height
 Height and Width Code Challenge, Box Model, Box Model Code Challenge, Outline,
 Outline Width, Outline Color, Outline Shorthand, Outline Offset, Text Color, Text Alignment, Text Decoration,
 Text Decoration Styles, Text/Text Transformation, Text/Text Spacing, Text\Text Shadow, Text/Text Code Challenge,
-Fonts/Fonts, Fonts/Web Safe Fonts, Fonts/Font Fallbacks  (tu jestem teraz!) 
+Fonts/Fonts, Fonts/Web Safe Fonts, Fonts/Font Fallbacks, Fonts/Font Style, Fonts/Font Size,
+Fonts/Google Fonts, Fonts/Great Font Pairings, (tu jestem teraz!) 
 
 */
 
@@ -194,3 +195,13 @@ a {
     background-color: #111111;
 }
 
+#ppp {
+    font-style: oblique;
+    font-weight: bold;
+    font-variant: small-caps;
+    /* font-size: small; */
+    /* font-size: 16px; */
+    /* font-size: 1.5em; */
+    /* font-size: 1rem; */
+    font-size: 5vw;
+}
