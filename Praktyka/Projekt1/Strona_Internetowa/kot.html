@@ -51,7 +51,7 @@ position: fixed;
 
 h1 {
 text-shadow: 2px 2px 5px white;
-background-image: url("kottlopasek.jpg");
+background-image: url("../Obrazki/kottlopasek.jpg");
 width: 500px;
 text-align: center; 
 margin: auto auto 10px auto; 
@@ -85,7 +85,7 @@ margin: 0;
 
 
 </style>
-<link rel="icon" type="image/x-icon" href="khot.ico"></link>
+<link rel="icon" type="image/x-icon" href="../Obrazki/khot.ico"></link>
 </head>
 <div>
 <h1 style="text-align: center;">Strona dla wielojęzycznych</h1>
@@ -96,25 +96,26 @@ margin: 0;
 
 <body>
 <video autoplay muted loop playsinline class="video-tlo"; style="margin: auto">
-	<source src="kocietło.mp4" type="video/mp4">
+	<source src="../Wideo/kocietło.mp4" type="video/mp4">
 </video>
 
 <nav style="position:center;" class="kontener;" style="width:50%;">
 <ul style="position: absolute; top: 18%; left: 33% transform: translateY(-50%);">
 <li><button onclick="window.location.href='strona_główna.html'">Strona Główna
 </button></li>
-<li><button onclick="window.location.href='utwory_muzyczne.html'">Utwory muzyczne</button></li>
+<li><button onclick="window.location.href='utwory_muzyczne.html'">Utwory Muzyczne</button></li>
 <li><button onclick="window.location.href='słownik.html'">Słownik</button></li>
 <li><button onclick="window.location.href='książki.html'">Książki</button></li>
 <li><button onclick="window.location.href='gry.html'">Gry</button></li>
 <li><button onclick="window.location.href='kot.html'">Kot</button></li>
+<li><button onclick="window.location.href='spotwyborczy.html'">Spot Wyborczy</button></li>
 </ul>
 </nav>
 
 <div class="video-container kontener;" onclick="odpalWideo()" style="position: absolute; top: 50%; left: 40%; transform: translateY(-50%); translateX(-50%);">       
-        <img id="miniaturka" src="bulbul.jpg" alt="Kliknij, aby odtworzyć">
+        <img id="miniaturka" src="../Obrazki/bulbul.jpg" alt="Kliknij, aby odtworzyć">
         <video id="mojeWideo" controls>
-        <source src="bleble.mp4" type="video/mp4">
+        <source src="../Wideo/bleble.mp4" type="video/mp4">
         </video>
 </div><script>
         function odpalWideo() {
