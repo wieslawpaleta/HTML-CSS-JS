@@ -30,7 +30,7 @@ body {
     /*background-position:right top;*/
     /*background-attachment: fixed;*/
     /* background-attachment: scroll; */ 
-    background: #d9dd00 url("cieplewygazowanepiwo.jpg") no-repeat center;
+    background: #d9dd00 url("../Obrazki/cieplewygazowanepiwo.jpg") no-repeat center;
     background-attachment: fixed;
     background-size: 100% 100%;
 }
@@ -172,11 +172,17 @@ a {
 }
 
 .ulnav {
+    display: flex;
+    justify-content: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333333;
+}
+
+.ulnav li {
+    list-style-type: none; 
 }
 
 .linav {
