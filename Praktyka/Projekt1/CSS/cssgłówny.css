@@ -11,8 +11,8 @@ Outline Width, Outline Color, Outline Shorthand, Outline Offset, Text Color, Tex
 Text Decoration Styles, Text/Text Transformation, Text/Text Spacing, Text\Text Shadow, Text/Text Code Challenge,
 Fonts/Fonts, Fonts/Web Safe Fonts, Fonts/Font Fallbacks, Fonts/Font Style, Fonts/Font Size,
 Fonts/Google Fonts, Fonts/Great Font Pairings, Fonts/Font Property, Fonts/Fonts Code Challenge,
-Icons/Font Awesome, Icons/Bootstrap 
- (tu jestem teraz!) 
+Icons/Font Awesome, Icons/Bootstrap, Icons/Icons - Google, Icons/ Icons Code Challenge, Links/Styling Links
+Links/Link Buttons, :inks/Links Code Challenge, Lists/Lists (tu jestem teraz!) 
 
 */
 
@@ -35,6 +35,7 @@ body {
     background: #d9dd00 url("../Obrazki/cieplewygazowanepiwo.jpg") no-repeat center;
     background-attachment: fixed;
     background-size: 100% 100%;
+    cursor: wait;
 }
 
 * {
