@@ -12,7 +12,8 @@ Text Decoration Styles, Text/Text Transformation, Text/Text Spacing, Text\Text S
 Fonts/Fonts, Fonts/Web Safe Fonts, Fonts/Font Fallbacks, Fonts/Font Style, Fonts/Font Size,
 Fonts/Google Fonts, Fonts/Great Font Pairings, Fonts/Font Property, Fonts/Fonts Code Challenge,
 Icons/Font Awesome, Icons/Bootstrap, Icons/Icons - Google, Icons/ Icons Code Challenge, Links/Styling Links
-Links/Link Buttons, :inks/Links Code Challenge, Lists/Lists (tu jestem teraz!) 
+Links/Link Buttons, :inks/Links Code Challenge, Lists/Lists, Lists/Lists Code Challenge, Tables/Tables,
+ (tu jestem teraz!) 
 
 */
 
@@ -213,4 +214,8 @@ a {
     /* font-size: 1.5em; */
     /* font-size: 1rem; */
     font-size: 5vw;
+}
+
+table, th, td {
+    border: 1px solid green;
 }
