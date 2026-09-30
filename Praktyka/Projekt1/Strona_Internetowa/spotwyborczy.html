@@ -15,7 +15,8 @@ Block & Inline/Block and Inline Exercises, Block & Inline/Block & Inline Code Ch
 Classes/class Attribute, Classes/Classes Exercises, Classes/Classes Code Challenge, Id/id Attribute, Id/ id exercises, Id/Id Code Challenge,
 Buttons/Buttons, Buttons/Buttons Code Challenge, Iframes/Iframes,  Iframes/Iframes Exercises, Iframes/Iframes Code Challenge,
 JavaScript/JavaScript, JavaScript/Scripts Exercises, JavaScript/JavaScript Code Challenge, File Paths/File Paths,
-File Paths/File Paths Code Challenge, Head/Head, Head/Head Exercises
+File Paths/File Paths Code Challenge, Head/Head, Head/Head Exercises, Heads/Head Code Challenge, Layout/Layout,
+
 -->
 
 <!--JavaScript W3Schools:
@@ -134,7 +135,8 @@ function myFunction() {
 <!-- <body style="background-color:powderblue;"></body> -->
 
 <body>
-<div>
+
+<nav>
     <ul style="list-style-type: square;" class="ulnav">
     <li class="linav"><a href="strona_główna.html">Strona Główna</a></li>
     <li class="linav"><a href="gry.html">Gry</a></li>
@@ -143,8 +145,8 @@ function myFunction() {
     <li class="linav"><a href="kot.html">Kot</a></li>
     <li class="linav"><a href="utwory_muzyczne.html">Utwory Muzyczne</a></li>
     </ul>
-</div>
-<h1 style="font-size:60px; color: tomato; border:2px solid lightgoldenrodyellow;" id="C4">Spot Wyborczy Domino Jachasia</h1>
+</nav>
+<header><h1 style="font-size:60px; color: tomato; border:2px solid lightgoldenrodyellow;" id="C4">Spot Wyborczy Domino Jachasia</h1></header>
 <h1 style="color:orange; border:2px solid rgb(240, 10, 136);">Spot Wyborczy Domino Jachasia</h1>
 <h2 style="color:dodgerblue; border:2px solid #37ee09;">Spot Wyborczy Domino Jachasia</h2>
 <h3 style="color:mediumseagreen; border:2px solid hsl(190, 82%, 15%);">Spot Wyborczy Domino Jachasia</h3>
@@ -152,20 +154,22 @@ function myFunction() {
 <h5 style="color:slateblue; border:2px solid hsla(140, 53%, 70%, 0.322);">Spot Wyborczy Domino Jachasia</h5>
 <h6 style="color:violet; border:2px solid rgb(0, 0, 0);">Spot Wyborczy Domino Jachasia</h6>
 <hr>
+<section>
 <p style="text-align: center;" class="dotted"><strong>WŁÓŻ OKULARY 3D!</strong></p>
 <audio src="../Muzyka/stronamuzyka.m4a" autoplay muted loop controls style="display: block; margin: auto;"></audio>
 <p class="groove"><ins>Słońce</ins></p>
 <p><sup><a href="https://youtu.be/9_WxE8HiBTs?si=MSxn76t4glXMivxo&t=12" target="_parent"  class="outset">Plaża</a></sup></p>
 <p title="Mocny amper"><a href="https://www.youtube.com/watch?v=GMjTcL4ypW0" target="_top">Ciepłe <sub>wygazowane</sub> piwo</a></p>
-<button onclick="document.location='stronagłówna.html'">HTML Tutorial</button>
+</section><aside><button onclick="document.location='stronagłówna.html'">HTML Tutorial</button>
 <a href="https://github.com/wieslawpaleta/Strona-Html" target="_self" class="inset">Tutaj!
 <img src="../Obrazki/kuń.png" alt="Wspaniały obrazek" width=""104" height="142" style="float:left;"></a>
+</aside><article>
 <div class="div1">
 <h1 class="kiełbasawyborcza"><a href="#C4">jak można się spodziewać, można tam znaleźć różne projekty.<br>Na przykład programy: Python, Java, C++, bazy danych SQL, strony HTML/CSS/JavaScript</a></h1>
 </div>
 <div class="div2">
 <h1 class="kiełbasawyborcza"><a href="#C4">jak można się spodziewać, można tam znaleźć różne projekty.<br>Na przykład programy: Python, Java, C++, bazy danych SQL, strony HTML/CSS/JavaScript</a></h1>
-</div>
+</div></article>
 <a href="https://pixabay.com/photos/beach-paradise-island-palm-trees-1761410/" target="_blank">
 <img src="https://i.imgur.com/bdQ5x6l.jpeg" alt="Wspaniała plaża" width="300" height="200">Rajska plaża</a>
 
@@ -317,6 +321,9 @@ console.log(10 + 11);
         </tr>
     </table>
 </div>
+<footer style="text-align: center;">
+    Koniec!
+</footer>
 
 
 </body>
