@@ -14,7 +14,7 @@ Fonts/Google Fonts, Fonts/Great Font Pairings, Fonts/Font Property, Fonts/Fonts 
 Icons/Font Awesome, Icons/Bootstrap, Icons/Icons - Google, Icons/ Icons Code Challenge, Links/Styling Links
 Links/Link Buttons, :inks/Links Code Challenge, Lists/Lists, Lists/Lists Code Challenge, Tables/Tables, 
 Tables/Table Size (Width and Height), Tables/Table Alignment, Tables/Table Styling
-, Responsive Tables (tu jestem teraz!) 
+, Responsive Tables, Table/Tables Code Challenge, Display/Display,  (tu jestem teraz!) 
 
 */
 
@@ -220,3 +220,7 @@ a {
 table, th, td {
     border: 1px solid green;
 }
+
+/* span {
+    display: block;
+} */
