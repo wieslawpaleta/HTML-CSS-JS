@@ -16,7 +16,8 @@ Classes/class Attribute, Classes/Classes Exercises, Classes/Classes Code Challen
 Buttons/Buttons, Buttons/Buttons Code Challenge, Iframes/Iframes,  Iframes/Iframes Exercises, Iframes/Iframes Code Challenge,
 JavaScript/JavaScript, JavaScript/Scripts Exercises, JavaScript/JavaScript Code Challenge, File Paths/File Paths,
 File Paths/File Paths Code Challenge, Head/Head, Head/Head Exercises, Heads/Head Code Challenge, Layout/Layout,
-Layout/Layout Code Challenge, Responsive/Responsive,
+Layout/Layout Code Challenge, Responsive/Responsive, Responsive/Responsive Exercises, Responsive/Responsive Code Challenge, Computercode/Computercode
+ComputerCode/Exercises, Computercode/Computer Code Challenge
 
 -->
 
@@ -208,24 +209,13 @@ trzciną zaledwie tylko kołysze.
 </pre>
 </div>
 <p id="grzyb" class="tlogrzyb" style="font-size: 20px; color: green; text-align: center;"></p>
-<script>
-document.getElementById("grzyb").innerHTML = "To nie jest mój pierwszy JavaScript";
-</script>
+
 <p id="ser" class="solid">Zmień moje zdanie!</p>
 <button type="button" onclick="myFunction()">Spróbuj!</button>
 <button type="button" onclick="document.write(5 + 6)">Stop dla przycisków</button>
 <button onclick="window.print()">Imprimer cette page</button>
 <a href="mailto:someone@example.com">Do not send email</a>
 <p id="cebula" style="text-align: center;" class="dotted"></p>
-<script> function mojaFunkcja() {
-    alert("Uhuhuhu!")
-} 
-document.getElementById("cebula").innerText = "Zagłosuj na Domina Jachasia!";
-document.write(5 + 6);
-//window.alert(5 + 6);
-//alert("I myk!");
-console.log(10 + 11);
-</script>
 <div class="div3" style="display: flex;">
 <table style="width:50%">
 <colgroup>
@@ -322,9 +312,83 @@ console.log(10 + 11);
         </tr>
     </table>
 </div>
+
+<p class="flip" onclick="myFunction1()">Pokaż/schowaj panel</p>
+<div id="panel">
+    <p>Widać</p>
+    <p>Nie widać</p>
+    <p>Znowu widać</p>   
+    <p>Znowu nie widać</p> 
+</div>
+<div>
+<pre style="direction: ltr;">
+<code>
+x = 5;
+y = 6;
+z = x + y;
+</code>
+</pre>
+<p>Zapisz dokument poprzez naciśnięcie <kbd>Ctrl + S</kbd></p>
+<p>Wiadmość z twojego obliczeniowiec:</p>
+<p><samp>Plik nie został znaleziony.<br>Naciśnij F1, aby kontynuować</samp></p>
+<p>Pole trójkąta wynosi: 1/2 x <var>b</var> x <var>h</var>, gdzie <var>b</var> jest podstawą i <var>h</var> jest wysokością.</p>
+</div>
+<div class="imgbox" id="imgbox1">Box 1<br>
+    <img src="../Obrazki/slowniktlo.png" alt="A" style="width:100%">
+    <button class="buttoon" onclick="removeElement()">Usuń</button>
+</div>
+<div class="imgbox" id="imgbox2">Box 2<br>
+    <img src="../Obrazki/schemat.png" alt="Schemat" style="width:100%">
+    <button class="buttoon" onclick="changeVisibility()">Ukryj</button>
+</div>
+<div class="imgbox" id="imgbox3">Box 3<br>
+    <img src="../Obrazki/bulbul.jpg" alt="Bulbul" style="width:100%">
+    <button class="buttoon" onclick="resetElement()">Przywróć</button>
+</div>
+
+
 <footer style="text-align: center;">
     Koniec!
 </footer>
+<script>
+document.getElementById("grzyb").innerHTML = "To nie jest mój pierwszy JavaScript";
+</script>
+<script> 
+
+function mojaFunkcja() {
+    alert("Uhuhuhu!")
+} 
+document.getElementById("cebula").innerText = "Zagłosuj na Domina Jachasia!";
+document.write(5 + 6);
+//window.alert(5 + 6);
+//alert("I myk!");
+console.log(10 + 11);
+
+function myFunction1() {
+  var x = document.getElementById("panel");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  
+}
+
+function removeElement() {
+  document.getElementById("imgbox1").style.display = "none";
+}
+
+function changeVisibility() {
+  document.getElementById("imgbox2").style.visibility = "hidden";
+}
+
+function resetElement() {
+  document.getElementById("imgbox1").style.display = "block";
+  document.getElementById("imgbox2").style.visibility = "visible";
+}
+
+</script>
+
 
 
 </body>
