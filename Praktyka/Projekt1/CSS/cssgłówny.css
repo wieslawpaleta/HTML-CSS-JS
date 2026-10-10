@@ -19,7 +19,8 @@ Display/Display Code Challenge, Max-width/Max-width, Max-width/Code Challenge, P
 Position/Fixed/Absolute Position, Sticky Positioning, Position/Position Code Challenge, Position Offsets/Offsets,
 Position/Position Offsets Code Challenge, Z-index/Z-index, Z-index/Z-index Code Challenge, Overflow/Overlow,
 Overflow/Overflow X and y, Overlow/Overflow Code Challenge, Float/Float, Float/Clear/Clearfix,
-Float/Float przykłady,  (tu jestem teraz!) 
+Float/Float przykłady, Float/Float Code Challenge, Inline-block/Inline-block, Inline-block/Inline-block Code Challenge,
+  (tu jestem teraz!) 
 
 */
 
@@ -285,4 +286,11 @@ table, th, td {
 .imggalak {
     position: absolute;
     z-index: 3;
+}
+
+.imgAlign {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
 }
