@@ -20,7 +20,9 @@ Position/Fixed/Absolute Position, Sticky Positioning, Position/Position Code Cha
 Position/Position Offsets Code Challenge, Z-index/Z-index, Z-index/Z-index Code Challenge, Overflow/Overlow,
 Overflow/Overflow X and y, Overlow/Overflow Code Challenge, Float/Float, Float/Clear/Clearfix,
 Float/Float przykłady, Float/Float Code Challenge, Inline-block/Inline-block, Inline-block/Inline-block Code Challenge,
-Align/Center Align, Align/Horizontal Align, Align/Vertical Align, Align/Align Code Challenge, Combinators/Combinators (tu jestem teraz!) 
+Align/Center Align, Align/Horizontal Align, Align/Vertical Align, Align/Align Code Challenge, Combinators/Combinators,
+Combinators/Combinators Code Challenge, Pseudo-classes/Pseudo-classes, Pseudo-classes/Interactive,
+Pseudo-classes/Interactive/Pseudo-classes and HTML Classes, Pseudo-classes/Structural (tu jestem teraz!)
 
 */
 
@@ -315,4 +317,43 @@ table, th, td {
   width: 300px;
   border: 3px solid green;
   padding: 10px;
+}
+
+div p {
+    background-color: #d9dd00;
+}
+
+div > p {
+    background-color: red;
+}
+
+div + p {
+    background-color: rgb(36, 143, 68);
+}
+
+div ~ p {
+  background-color: rgb(118, 116, 231);
+}
+
+input:focus {
+  background-color: yellow;
+}
+
+a.highlight:hover {
+    color: #ff0000;
+    font-size: 50px;
+}
+
+.akapit {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+
+.klocek:hover p {
+  display: block;
+}
+
+p:first-child {
+    color: blue;
 }
