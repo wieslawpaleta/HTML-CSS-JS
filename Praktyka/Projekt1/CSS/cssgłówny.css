@@ -22,7 +22,9 @@ Overflow/Overflow X and y, Overlow/Overflow Code Challenge, Float/Float, Float/C
 Float/Float przykłady, Float/Float Code Challenge, Inline-block/Inline-block, Inline-block/Inline-block Code Challenge,
 Align/Center Align, Align/Horizontal Align, Align/Vertical Align, Align/Align Code Challenge, Combinators/Combinators,
 Combinators/Combinators Code Challenge, Pseudo-classes/Pseudo-classes, Pseudo-classes/Interactive,
-Pseudo-classes/Interactive/Pseudo-classes and HTML Classes, Pseudo-classes/Structural (tu jestem teraz!)
+Pseudo-classes/Interactive/Pseudo-classes and HTML Classes, Pseudo-classes/Structural, Pseudo-classes/Code Challenge,
+Pseudo-elements/Pseudo-elements, Pseudo-elements/Text,
+ (tu jestem teraz!)
 
 */
 
@@ -356,4 +358,16 @@ a.highlight:hover {
 
 p:first-child {
     color: blue;
+}
+
+p em:first-child {
+    color: yellow;
+}
+
+p:first-child em {
+  color: green;
+} 
+
+q:lang(no) {
+    quotes: "~" "~";
 }
