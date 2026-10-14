@@ -21,7 +21,7 @@ ComputerCode/Exercises, Computercode/Computer Code Challenge, Semantics/Semantic
 Semantics/Semantic Code Challenge, Style Guide/Style Guide, Entities/Entities, Entities/Entities Exercises, Entities/Entities Code Challenge,
 Symbols/Symbols, Emojis/Emojis, Forms/Forms, Forms/Exercises, Forms/Code Challenge, Form Attributes/Form Attributes,
 Form Attributes/Form Attributes Exercises, Form Elements/Form Elements/The <textarea> Element/Form Elements/Form Elements/The <output> Element, Form Elements/Exercises/Challenge,
-Input Types/Input Types/Checkbox
+Input Types/Input Types/Checkbox, Input Types/Input Types/Datetime-local
 
 
 -->
@@ -455,6 +455,20 @@ z = x + y;
   <input type="reset" value="Reset">
   <input type="radio" id="html" name="fav_language" value="HTML">
   <label for="html">HTML</label><br>
+  <input type="checkbox" id="pojazd1" name="pojazd1" value="Rower">
+  <label for="pojazd1"> Mam rower </label><br>
+  <input type="checkbox" id="pojazd2" name="pojazd2" value="Samochoód">
+  <label for="pojazd2"> Mam samochód </label><br>
+  <input type="button" onclick="alert('Cześć!')" value="Click me!">
+  <label for="ulubionykolor">Wybierz ulubioną barwę:</label>
+  <input type="color" id="ulubionykolor" name="ulubionykolor">
+  <label for="urodzinki">Urodzinki:</label>
+  <input type="date" id="urodzinki" name="urodzinki">
+  <label for="datemax">Wprowadź datę przed 1980-01-01:</label>
+  <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+  <label for="datemin">Wprowadź datę po 2000-01-01:</label>
+  <input type="date" id="datemin" name="datemin" min="2000-01-02">
+  
 </form>
 
 <div class="klocek">Na Anubisa i Popisa pojaw się!
@@ -462,8 +476,8 @@ z = x + y;
 </div>
 
 <div>
-    <p>To jest pilna wiadomość!</p>
-    <p>To też!</p>
+    <p>To jest <em>pilna wiadomość!</em></p>
+    <p>To <em>też!</em></p>
     <div>
         <p>To jest pilna wiadomość!</p>
         <p>To też!</p>
@@ -473,6 +487,7 @@ z = x + y;
 <div>
     <p>To jest pilna wiadomość!</p>
     <p>To też!</p>
+    <p>Trochę tekstu <q lang="no">cytat w akapicie</q> Trochę tekstu.</p>
 </div>
 
 
