@@ -468,7 +468,17 @@ z = x + y;
   <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
   <label for="datemin">Wprowadź datę po 2000-01-01:</label>
   <input type="date" id="datemin" name="datemin" min="2000-01-02">
-  
+  <label for="birthdaytime">Urodzinki (data i czas):</label>
+  <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+  <label for="email">Wprowadź swój e-mail:</label>
+  <input type="email" id="email" name="email">
+  <input type="image" src="../Obrazki/maupa.jpeg" alt="Submit" width="48" height="48">
+  <label for="myfile">Wybierz plik:</label>
+  <input type="file" id="myfile" name="myfile">
+  <label for="fname">Imię:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="hidden" id="custId" name="custId" value="3487">
+  <input type="submit" value="Submit">
 </form>
 
 <div class="klocek">Na Anubisa i Popisa pojaw się!
@@ -476,7 +486,7 @@ z = x + y;
 </div>
 
 <div>
-    <p>To jest <em>pilna wiadomość!</em></p>
+    <p class="intro">To jest <em>pilna wiadomość!</em></p>
     <p>To <em>też!</em></p>
     <div>
         <p>To jest pilna wiadomość!</p>
@@ -490,6 +500,7 @@ z = x + y;
     <p>Trochę tekstu <q lang="no">cytat w akapicie</q> Trochę tekstu.</p>
 </div>
 
+<h3 class="przed po">Obrazek przed</h3>
 
 <footer style="text-align: center;">
     Koniec!
