@@ -23,7 +23,8 @@ Float/Float przykłady, Float/Float Code Challenge, Inline-block/Inline-block, I
 Align/Center Align, Align/Horizontal Align, Align/Vertical Align, Align/Align Code Challenge, Combinators/Combinators,
 Combinators/Combinators Code Challenge, Pseudo-classes/Pseudo-classes, Pseudo-classes/Interactive,
 Pseudo-classes/Interactive/Pseudo-classes and HTML Classes, Pseudo-classes/Structural, Pseudo-classes/Code Challenge,
-Pseudo-elements/Pseudo-elements, Pseudo-elements/Text,
+Pseudo-elements/Pseudo-elements, Pseudo-elements/Text, Pseudp-elements/Content, Pseudo-elements/Code Challenge,
+Opacity/Opacity
  (tu jestem teraz!)
 
 */
@@ -371,3 +372,40 @@ p:first-child em {
 q:lang(no) {
     quotes: "~" "~";
 }
+
+p::first-line {
+    color: pink;
+}
+
+p::first-letter {
+    color: white;
+    font-variant: small-caps;
+    font-size: 19px;
+}
+
+p.intro::first-letter{
+    color: black;
+    font-size: 200%;
+}
+
+.przed::before {
+    content: url(../Obrazki/maupa.jpeg);
+}
+
+.po::after {
+    content: url(../Obrazki/maupa.jpeg);
+}
+
+::marker { 
+  color: red;
+  font-size: 23px;
+}
+
+::selection {
+  color: red;
+  background: yellow;
+}
+
+/* dialog::backdrop {
+  background-color: lightgreen;
+} */
