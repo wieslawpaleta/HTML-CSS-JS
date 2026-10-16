@@ -21,8 +21,7 @@ ComputerCode/Exercises, Computercode/Computer Code Challenge, Semantics/Semantic
 Semantics/Semantic Code Challenge, Style Guide/Style Guide, Entities/Entities, Entities/Entities Exercises, Entities/Entities Code Challenge,
 Symbols/Symbols, Emojis/Emojis, Forms/Forms, Forms/Exercises, Forms/Code Challenge, Form Attributes/Form Attributes,
 Form Attributes/Form Attributes Exercises, Form Elements/Form Elements/The <textarea> Element/Form Elements/Form Elements/The <output> Element, Form Elements/Exercises/Challenge,
-Input Types/Input Types/Checkbox, Input Types/Input Types/Datetime-local
-
+Input Types/Input Types/Checkbox, Input Types/Input Types/Input Type Url
 
 -->
 
@@ -399,9 +398,9 @@ z = x + y;
     <input type="submit">
 </form>
 </div>
-<img src="../Obrazki/maupa.jpeg" alt="Paris" style="width:40%" class="imgCenterAlign">
-<img src="../Obrazki/maupa.jpeg" alt="Paris" style="width:40%" class="imgRightAlign">
-<img src="../Obrazki/maupa.jpeg" alt="Paris" style="width:40%" class="imgLeftAlign">
+<img src="../Obrazki/maupa.jpeg" alt="Paris" style="width:40%" class="imgCenterAlign revaaimg">
+<img src="../Obrazki/maupa.jpeg" alt="Paris" style="width:40%" class="imgRightAlign aaimg">
+<img src="../Obrazki/maupa.jpeg" alt="Paris" style="width:40%" class="imgLeftAlign aaimg">
 
 <form action="https://www.youtube.com/watch?v=hYaxWqrZUbA">
 <textarea name="masaż" rows="10" cols="30" style="width:200px; height:600px;">
@@ -479,6 +478,17 @@ z = x + y;
   <input type="text" id="fname" name="fname"><br><br>
   <input type="hidden" id="custId" name="custId" value="3487">
   <input type="submit" value="Submit">
+  <label for="bdaymonth">Urodzinki (miesiąc i rok):</label>
+  <input type="month" id="bdaymonth" name="bdaymonth">
+  <label for="quantity">Ilość (pomiędzy 1 i 5):</label>
+  <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
+  <label for="vol">Głośność (between 0 and 50):</label>
+  <input type="range" id="vol" name="vol" min="0" max="50">
+  <label for="gsearch">Search Google:</label>
+  <input type="search" id="gsearch" name="gsearch">
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+  <label for="appt">Ustaw czas:</label>
+  <input type="time" id="appt" name="appt">
 </form>
 
 <div class="klocek">Na Anubisa i Popisa pojaw się!
@@ -501,6 +511,17 @@ z = x + y;
 </div>
 
 <h3 class="przed po">Obrazek przed</h3>
+
+<nav>
+<ul class="ulVerticalNav">
+    <li class="liVerticalNav"><a href="strona_główna.html">Strona Główna</a></li>
+    <li class="liVerticalNav"><a href="gry.html">Gry</a></li>
+    <li class="liVerticalNav"><a href="książki.html">Książki</a></li>
+    <li class="liVerticalNav"><a href="słownik.html">Słownik</a></li>
+    <li class="liVerticalNav"><a href="kot.html">Kot</a></li>
+    <li class="liVerticalNav"><a href="utwory_muzyczne.html">Utwory Muzyczne</a></li>
+</ul>
+</nav>
 
 <footer style="text-align: center;">
     Koniec!
