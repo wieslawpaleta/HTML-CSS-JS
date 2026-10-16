@@ -24,7 +24,7 @@ Align/Center Align, Align/Horizontal Align, Align/Vertical Align, Align/Align Co
 Combinators/Combinators Code Challenge, Pseudo-classes/Pseudo-classes, Pseudo-classes/Interactive,
 Pseudo-classes/Interactive/Pseudo-classes and HTML Classes, Pseudo-classes/Structural, Pseudo-classes/Code Challenge,
 Pseudo-elements/Pseudo-elements, Pseudo-elements/Text, Pseudp-elements/Content, Pseudo-elements/Code Challenge,
-Opacity/Opacity
+Opacity/Opacity, Opacity/Code Challenge, Navigation Bars/Navbar Intro, Navigation Bars/Vertical Navigation Bar
  (tu jestem teraz!)
 
 */
@@ -409,3 +409,39 @@ p.intro::first-letter{
 /* dialog::backdrop {
   background-color: lightgreen;
 } */
+
+.aaimg {
+    opacity: 0.5;
+}
+
+.aaimg:hover {
+    opacity: 1.0;
+}
+
+.revaaimg {
+    opacity: 1.0;
+}
+
+.revaaimg:hover {
+    opacity: 0.5;
+}
+
+#ulVerticalNav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+#liVerticalNav a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+#liVerticalNav a:hover {
+    background-color: #555555;
+    color: white;
+}
