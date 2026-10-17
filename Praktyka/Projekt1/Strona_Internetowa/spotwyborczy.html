@@ -21,7 +21,8 @@ ComputerCode/Exercises, Computercode/Computer Code Challenge, Semantics/Semantic
 Semantics/Semantic Code Challenge, Style Guide/Style Guide, Entities/Entities, Entities/Entities Exercises, Entities/Entities Code Challenge,
 Symbols/Symbols, Emojis/Emojis, Forms/Forms, Forms/Exercises, Forms/Code Challenge, Form Attributes/Form Attributes,
 Form Attributes/Form Attributes Exercises, Form Elements/Form Elements/The <textarea> Element/Form Elements/Form Elements/The <output> Element, Form Elements/Exercises/Challenge,
-Input Types/Input Types/Checkbox, Input Types/Input Types/Input Type Url
+Input Types/Input Types/Checkbox, Input Types/Input Types/Input Type Url, Input Types/Exercises, Input Types/Code Challenge,
+Input Attributes/Input Attributes, 
 
 -->
 
@@ -447,9 +448,9 @@ z = x + y;
 </form>
 <form action="../Muzyka/stronamuzyka.m4a">
   <label for="username">Nazwa Użytkownika:</label><br>
-  <input type="text" id="username" name="username"><br>
+  <input type="text" id="username" name="username" value="Janek" size="50"><br>
   <label for="pwd">Hasło:</label><br>
-  <input type="password" id="pwd" name="pwd">
+  <input type="password" id="pwd" name="pwd" value="JedenDwaTrzy" readonly>
   <input type="submit" value="Submit">
   <input type="reset" value="Reset">
   <input type="radio" id="html" name="fav_language" value="HTML">
@@ -473,9 +474,9 @@ z = x + y;
   <input type="email" id="email" name="email">
   <input type="image" src="../Obrazki/maupa.jpeg" alt="Submit" width="48" height="48">
   <label for="myfile">Wybierz plik:</label>
-  <input type="file" id="myfile" name="myfile">
+  <input type="file" id="myfile" name="myfile" multiple>
   <label for="fname">Imię:</label>
-  <input type="text" id="fname" name="fname"><br><br>
+  <input type="text" id="fname" name="fname" value="Dżon" maxlength="4" size="4" disabled><br><br>
   <input type="hidden" id="custId" name="custId" value="3487">
   <input type="submit" value="Submit">
   <label for="bdaymonth">Urodzinki (miesiąc i rok):</label>
@@ -489,6 +490,10 @@ z = x + y;
   <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
   <label for="appt">Ustaw czas:</label>
   <input type="time" id="appt" name="appt">
+  <label for="homepage">Dodaj stronę główną</label>
+  <input type="url" id="homepage" name="homepage">
+  <label for="week">Wybierz tydzień:</label>
+  <input type="week" id="week" name="week">
 </form>
 
 <div class="klocek">Na Anubisa i Popisa pojaw się!
@@ -513,13 +518,13 @@ z = x + y;
 <h3 class="przed po">Obrazek przed</h3>
 
 <nav>
-<ul class="ulVerticalNav">
-    <li class="liVerticalNav"><a href="strona_główna.html">Strona Główna</a></li>
-    <li class="liVerticalNav"><a href="gry.html">Gry</a></li>
-    <li class="liVerticalNav"><a href="książki.html">Książki</a></li>
-    <li class="liVerticalNav"><a href="słownik.html">Słownik</a></li>
-    <li class="liVerticalNav"><a href="kot.html">Kot</a></li>
-    <li class="liVerticalNav"><a href="utwory_muzyczne.html">Utwory Muzyczne</a></li>
+<ul id="ulVerticalNav">
+    <li id="liVerticalNav"><a href="strona_główna.html">Strona Główna</a></li>
+    <li id="liVerticalNav"><a href="gry.html">Gry</a></li>
+    <li id="liVerticalNav"><a href="książki.html">Książki</a></li>
+    <li id="liVerticalNav"><a href="słownik.html">Słownik</a></li>
+    <li id="liVerticalNav"><a href="kot.html">Kot</a></li>
+    <li id="liVerticalNav"><a href="utwory_muzyczne.html">Utwory Muzyczne</a></li>
 </ul>
 </nav>
 

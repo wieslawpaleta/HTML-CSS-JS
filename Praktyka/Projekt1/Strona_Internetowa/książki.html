@@ -12,9 +12,9 @@ Wiesia in the way">
 <title>Książki</title>
 <style>
 
-* {
+/* * {
 color: white;
-}
+} */
 
 h1 {
 text-shadow: 2px 2px 5px white;
@@ -31,6 +31,30 @@ a {
 font-family: 'Lucida Console', monospace;
 }
 
+#ulVerticalNav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+#liVerticalNav a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+#liVerticalNav a:active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+#liVerticalNav a:hover:not(:active) {
+    background-color: #555555;
+    color: white;
+}
 
 
 footer {
@@ -43,7 +67,7 @@ footer {
 <link rel="icon" type="image/x-icon" href="../Obrazki/ksiazkitlo.png"></link>
 </head>
 <h1 style="background-color: green; text-align: center;">Strona dla wielojęzycznych</h1>
-<h6>
+<!--  <h6>
 <table style="margin: 0 auto; text-align:center; font-size:20px">
 <tr>
 <td><a href="strona_główna.html" style="text-decoration:none;">Strona Główna</td>
@@ -56,7 +80,18 @@ footer {
 </tr>
 </table>
 </h6>
-<hr>
+<hr> -->>
+
+<nav>
+<ul id="ulVerticalNav">
+    <li id="liVerticalNav"><a href="strona_główna.html">Strona Główna</a></li>
+    <li id="liVerticalNav"><a href="gry.html">Gry</a></li>
+    <li id="liVerticalNav"><a href="książki.html">Książki</a></li>
+    <li id="liVerticalNav"><a href="słownik.html">Słownik</a></li>
+    <li id="liVerticalNav"><a href="kot.html">Kot</a></li>
+    <li id="liVerticalNav"><a href="utwory_muzyczne.html">Utwory Muzyczne</a></li>
+</ul>
+</nav>
 
 <body style="background-image: url('../Obrazki/ksiazkatlo.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
 
