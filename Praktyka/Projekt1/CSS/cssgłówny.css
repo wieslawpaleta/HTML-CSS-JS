@@ -441,7 +441,12 @@ p.intro::first-letter{
     text-decoration: none;
 }
 
-#liVerticalNav a:hover {
+#liVerticalNav a:active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+#liVerticalNav a:hover:not(:active) {
     background-color: #555555;
     color: white;
 }
