@@ -430,15 +430,36 @@ p.intro::first-letter{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 200px;
+    width: 130px;
     background-color: #f1f1f1;
+    border: 1px solid #555555;
 }
+
+/* #ulVerticalNav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 130px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+} */
 
 #liVerticalNav a {
     display: block;
     color: black;
     padding: 8px 16px;
     text-decoration: none;
+}
+
+#liVerticalNav {
+    text-align: center;
+    border-bottom: 1px solid #555555;
+}
+
+#liVerticalNav:last-child {
+    border-bottom: none;
 }
 
 #liVerticalNav a:active {
