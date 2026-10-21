@@ -11,12 +11,12 @@ Wiesia akapulko
 Wiesia in the way">
 <title>Książki</title>
 <style>
-
+body {margin: 0;}
 /* * {
 color: white;
 } */
 
-h1 {
+<!-- h1 {
 text-shadow: 2px 2px 5px white;
 }
 
@@ -30,33 +30,61 @@ a:hover {color:red}
 a {
 font-family: 'Lucida Console', monospace;
 }
-
-#ulVerticalNav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 25%;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
+-->
+ul.sidenav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
 }
 
-#liVerticalNav a {
-    display: block;
-    color: black;
-    padding: 8px 16px;
-    text-decoration: none;
+ul.sidenav li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
 }
-
-#liVerticalNav a:active {
-  background-color: #04AA6D;
+ 
+ul.sidenav li a.active {
+  background-color: #4CAF50;
   color: white;
 }
 
-#liVerticalNav a:hover:not(:active) {
-    background-color: #555555;
-    color: white;
+ul.sidenav li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 25%;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 900px) {
+  ul.sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  ul.sidenav li a {
+    float: left;
+    padding: 15px;
+  }
+  
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  ul.sidenav li a {
+    text-align: center;
+    float: none;
+  }
 }
 
 
@@ -66,6 +94,7 @@ footer {
   left: 0;
   width: 100%;
   background-color: #333;
+}
 </style>
 <link rel="icon" type="image/x-icon" href="../Obrazki/ksiazkitlo.png"></link>
 </head>
@@ -85,20 +114,21 @@ footer {
 </h6>
 <hr> -->>
 
-<nav>
-<ul id="ulVerticalNav">
-    <li id="liVerticalNav"><a href="strona_główna.html">Strona Główna</a></li>
-    <li id="liVerticalNav"><a href="gry.html">Gry</a></li>
-    <li id="liVerticalNav"><a href="książki.html">Książki</a></li>
-    <li id="liVerticalNav"><a href="słownik.html">Słownik</a></li>
-    <li id="liVerticalNav"><a href="kot.html">Kot</a></li>
-    <li id="liVerticalNav"><a href="utwory_muzyczne.html">Utwory Muzyczne</a></li>
-</ul>
-</nav>
 
 <body style="background-image: url('../Obrazki/ksiazkatlo.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
 
-<div style="text-align: center; display: flex;">
+<ul class="sidenav">
+    <li><a href="strona_główna.html">Strona Główna</a></li>
+    <li><a href="gry.html">Gry</a></li>
+    <li><a href="książki.html">Książki</a></li>
+    <li><a href="słownik.html">Słownik</a></li>
+    <li><a href="kot.html">Kot</a></li>
+    <li><a href="utwory_muzyczne.html">Utwory Muzyczne</a></li>
+</ul>
+
+
+
+<!-- <div style="text-align: center; display: flex;">
 <ol style="list-style-position: inside; padding: 0; display: inline; width:10%; height:10%;" class="liste-emoji">
   <li><img src="https://m.media-amazon.com/images/I/81bUoRtBP4L._AC_UF1000,1000_QL80_.jpg">The Complete Novels of Sherlock Holmes</li>
   <li><img src="https://m.media-amazon.com/images/I/71tk7SUDnkL._AC_UF894,1000_QL80_.jpg">Exodus: Die Revolution der Alten Welt</li>
@@ -110,9 +140,8 @@ footer {
   <li><a href="https://m.media-amazon.com/images/I/81am6W98dFL.jpg">Harry Potter et l\'Ordre du Phénix</a></li>
   <li><a href="https://www.knizka.pl/environment/cache/images/productGfx_375745_0_0/1.webp">Нордическая мифология: Бенджамин Торп</a></li>	
 </ol>
-</div>
+</div> -->
 
-<hr>
 <footer>
 <p style="text-align: center">Strona w rozbudowie (jak nie zapomnę)</p>
 </footer>

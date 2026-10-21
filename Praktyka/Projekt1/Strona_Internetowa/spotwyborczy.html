@@ -22,7 +22,8 @@ Semantics/Semantic Code Challenge, Style Guide/Style Guide, Entities/Entities, E
 Symbols/Symbols, Emojis/Emojis, Forms/Forms, Forms/Exercises, Forms/Code Challenge, Form Attributes/Form Attributes,
 Form Attributes/Form Attributes Exercises, Form Elements/Form Elements/The <textarea> Element/Form Elements/Form Elements/The <output> Element, Form Elements/Exercises/Challenge,
 Input Types/Input Types/Checkbox, Input Types/Input Types/Input Type Url, Input Types/Exercises, Input Types/Code Challenge,
-Input Attributes/Input Attributes, Input Attributes/Input Attributes/the height and width Attributes
+Input Attributes/Input Attributes, Input Attributes/Input Attributes/the height and width Attributes, Input Attributes/Exercises,
+Input Form Attributes/Input Form Attributes/The formmethod Attribute
 
 -->
 
@@ -446,7 +447,7 @@ z = x + y;
     <input type="submit">
     <input type="url">
 </form>
-<form action="../Muzyka/stronamuzyka.m4a">
+<form action="../Muzyka/stronamuzyka.m4a" autocomplete="on">
   <label for="username">Nazwa Użytkownika:</label><br>
   <input type="text" id="username" name="username" value="Janek" size="50" required><br>
   <label for="pwd">Hasło:</label><br>
@@ -471,7 +472,7 @@ z = x + y;
   <label for="birthdaytime">Urodzinki (data i czas):</label>
   <input type="datetime-local" id="birthdaytime" name="birthdaytime">
   <label for="email">Wprowadź swój e-mail:</label>
-  <input type="email" id="email" name="email">
+  <input type="email" id="email" name="email"  autocomplete="off">
   <input type="image" src="../Obrazki/maupa.jpeg" alt="Submit" width="48" height="48">
   <label for="myfile">Wybierz plik:</label>
   <input type="file" id="myfile" name="myfile" multiple>
@@ -503,7 +504,29 @@ z = x + y;
   <label for="fname">Drugie imię:</label><br>
   <input type="text" id="fname" name="fname" autofocus>
   <input type="image" src="../Obrazki/maupa.jpeg" alt="Submit" width="48" height="48">
+  <input list="browsers">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
 </form>
+
+<form action="../Muzyka/stronamuzyka.m4a" id="form1">
+    <label for="fname">Imię:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <input type="submit" value="Submit">
+    <label for="lname">Nazwisko:</label>
+    <input type="text" id="lname" name="lname" form="form1" formaction="../Obrazki/pies.png">
+</form>
+
+    <label for="lname">Pseudonim:</label>
+    <input type="text" id="lname" name="lname" form="form1">
+
+<label for="lname">Nazwisko:</label>
+<input type="text" id="lname" name="lname" form="form1" formaction="../Obrazki/pies.png" value="OkOk">
 
 <div class="klocek">Na Anubisa i Popisa pojaw się!
   <p class="akapit">Tada!</p>
@@ -536,6 +559,21 @@ z = x + y;
     <li id="liVerticalNav"><a href="utwory_muzyczne.html">Utwory Muzyczne</a></li>
 </ul>
 </nav>
+
+<form action="../Obrazki/pies.png" method="post">
+  <label for="fname">Imię:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formaction="../Obrazki/maupa.jpeg" value="2">
+</form>
+
+<form action="../Obrazki/pies.png" method="post">
+  <label for="fname">Nazwisko:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formenctype="../Obrazki/maupa.jpeg"
+  value="3">
+</form>
 
 <footer style="text-align: center;">
     Koniec!
