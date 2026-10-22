@@ -50,6 +50,7 @@ body {
     background-attachment: fixed;
     background-size: 100% 100%;
     cursor: wait;
+    margin: 0;
 }
 
 * {
@@ -243,7 +244,9 @@ a {
     background-color: #04AA6D;
 }
 
-
+/* @media screen and (max-width: 600px) {
+    .ulnav {display: block;}
+} */
 
 #ppp {
     font-style: oblique;
