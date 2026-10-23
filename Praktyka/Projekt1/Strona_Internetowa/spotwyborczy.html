@@ -23,7 +23,7 @@ Symbols/Symbols, Emojis/Emojis, Forms/Forms, Forms/Exercises, Forms/Code Challen
 Form Attributes/Form Attributes Exercises, Form Elements/Form Elements/The <textarea> Element/Form Elements/Form Elements/The <output> Element, Form Elements/Exercises/Challenge,
 Input Types/Input Types/Checkbox, Input Types/Input Types/Input Type Url, Input Types/Exercises, Input Types/Code Challenge,
 Input Attributes/Input Attributes, Input Attributes/Input Attributes/the height and width Attributes, Input Attributes/Exercises,
-Input Form Attributes/Input Form Attributes/The formmethod Attribute, Input From Attributes Exercises,
+Input Form Attributes/Input Form Attributes/The formmethod Attribute, Input From Attributes Exercises, SVG Graphics/SVG Graphics
 Canvas/Canvas
 
 -->
@@ -585,9 +585,27 @@ z = x + y;
     <input type="submit" formmethod="post" value="Submit using POST" formtarget="_blank" formnovalidate="formnovalidate">
 </form>
 
+<canvas id="myCanvas" width="200" height="100" style="border: 1px solid #000000;"></canvas>
+
+<p>Obrazek do użycia:</p>
+<img id="maupa" src="../Obrazki/maupa.jpeg" alt="maupa" width="220" height="277">
+
+<p>Canvas to fill:</p>
+<canvas id="myCanvas1" width="250" height="300"
+style="border:1px solid #d3d3d3;">
+</canvas>
+
+<p><button onclick="myCanvas1()">Try it</button></p>
+
+<div class="dropdown">Najedź myszką na mnie!
+    <div class="dropdown-content">Ceść!</div>
+</div>
+
 <footer style="text-align: center;">
     Koniec!
 </footer>
+
+
 <script>
 document.getElementById("grzyb").innerHTML = "To nie jest mój pierwszy JavaScript";
 </script>
@@ -623,6 +641,31 @@ function changeVisibility() {
 function resetElement() {
   document.getElementById("imgbox1").style.display = "block";
   document.getElementById("imgbox2").style.visibility = "visible";
+}
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+// var grd = ctx.createLinearGradient(0, 0, 200, 0);
+var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+grd.addColorStop(0, "red");
+grd.addColorStop(1, "white");
+ctx.fillStyle = grd;
+ctx.fillRect(10, 10, 150, 80);
+ctx.moveTo(0, 0);
+ctx.lineTo(200, 100);
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.font = "30px Arial";
+ctx.fillText("Cześć świat", 10, 50);
+ctx.strokeText("Ahoj!", 30, 90)
+
+function myCanvas1() {
+  var c = document.getElementById("myCanvas1");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("maupa");
+  ctx.drawImage(img,10,10);
 }
 
 </script>
