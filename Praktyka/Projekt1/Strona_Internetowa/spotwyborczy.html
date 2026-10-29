@@ -24,7 +24,8 @@ Form Attributes/Form Attributes Exercises, Form Elements/Form Elements/The <text
 Input Types/Input Types/Checkbox, Input Types/Input Types/Input Type Url, Input Types/Exercises, Input Types/Code Challenge,
 Input Attributes/Input Attributes, Input Attributes/Input Attributes/the height and width Attributes, Input Attributes/Exercises,
 Input Form Attributes/Input Form Attributes/The formmethod Attribute, Input From Attributes Exercises, SVG Graphics/SVG Graphics
-Canvas/Canvas, SVG/SVG, SVG/SVG CODE CHALLENGE, HTML Media, Video/Video
+Canvas/Canvas, SVG/SVG, SVG/SVG CODE CHALLENGE, HTML Media, Video/Video, Video/Code Challenge, Audio/Audio, Audio/Code Challenge,
+Plug-ins/Plug-ins/The <embed> Element
 
 -->
 
@@ -40,7 +41,7 @@ Canvas/Canvas, SVG/SVG, SVG/SVG CODE CHALLENGE, HTML Media, Video/Video
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="refresh" content="30">
+<meta http-equiv="refresh" content="600">
 <meta name="author" content="Ja">
 <meta name="description" content="Spot Wyborczy">
 <meta name="keywords" content="Średnia, Pizza, Hawajska">
@@ -631,9 +632,18 @@ style="border:1px solid #d3d3d3;">
   Sorry, your browser does not support inline SVG.
 </svg>
 
-<video width="320" height="240" autoplay>
-    <source src="spot.mp4" type="video/mp4">
-</video>
+<div style="text-align: center;">
+    <button onclick="playPause()">Odtwórz/Zatrzymaj</button>
+    <button onclick="makeBig()">Duży</button>
+    <button onclick="makeSmall()">Mały</button>
+    <button onclick="makeNormal()">Normalny</button>
+    <br><br>
+    <video width="420" id="video1" controls> 
+    <source src="../Wideo/spotwyborczy.mp4" type="video/mp4">
+    </video>
+</div>
+
+<object data="../Obrazki/maupa.jpeg"></object>
 
 <footer style="text-align: center;">
     Koniec!
@@ -702,6 +712,35 @@ function myCanvas1() {
   ctx.drawImage(img,10,10);
 }
 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+
+const video = document.getElementById("video1");
+const VOLUME_CONSTANT = 0.2;
+video.volume = VOLUME_CONSTANT;
+video.addEventListener("volumechange", function() {
+        if (video.volume !== VOLUME_CONSTANT) {
+            video.volume = VOLUME_CONSTANT;
+        }
+    });
 </script>
 
 
