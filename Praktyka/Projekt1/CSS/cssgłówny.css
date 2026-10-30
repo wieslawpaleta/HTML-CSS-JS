@@ -27,7 +27,7 @@ Pseudo-elements/Pseudo-elements, Pseudo-elements/Text, Pseudp-elements/Content, 
 Opacity/Opacity, Opacity/Code Challenge, Navigation Bars/Navbar Intro, Navigation Bars/Vertical Navigation Bar, 
 Navigation Bars/Horizontal Navbar/Fixed Navigation Bar, Dropdowns/Dropdowns, Dropdowns/Advanced Dropdowns,
 Dropdowns/Code Challenge, Image Gallery/Image Gallery, Image Gallery/Code Challenge, Image Sprites/Image Sprites,
-Image Sprites/Code Challenge, Attribute Selectors/Attribute Selectors
+Image Sprites/Code Challenge, Attribute Selectors/Attribute Selectors, Attribute Selectors/Advanced Attr Selectors
  (tu jestem teraz!)
 
 */
@@ -507,4 +507,20 @@ p.intro::first-letter{
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+a[target] {
+  border: 5px solid yellow;
+}
+
+a[target="_blank"] {
+  border: 5px solid pink;
+}
+
+[title~="KAPITAN"] {
+  border: 5px solid yellow;
+}
+
+[class|="box"] {
+    border: 5px solid yellow;
 }
