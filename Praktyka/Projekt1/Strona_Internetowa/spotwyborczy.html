@@ -25,7 +25,7 @@ Input Types/Input Types/Checkbox, Input Types/Input Types/Input Type Url, Input 
 Input Attributes/Input Attributes, Input Attributes/Input Attributes/the height and width Attributes, Input Attributes/Exercises,
 Input Form Attributes/Input Form Attributes/The formmethod Attribute, Input From Attributes Exercises, SVG Graphics/SVG Graphics
 Canvas/Canvas, SVG/SVG, SVG/SVG CODE CHALLENGE, HTML Media, Video/Video, Video/Code Challenge, Audio/Audio, Audio/Code Challenge,
-Plug-ins/Plug-ins/The <embed> Element, YouTube, Web APIs
+Plug-ins/Plug-ins/The <embed> Element, YouTube, Web APIs, Geolocation API/Error Handling and Rejections
 
 -->
 
@@ -588,15 +588,17 @@ z = x + y;
 
 <canvas id="myCanvas" width="200" height="100" style="border: 1px solid #000000;"></canvas>
 
-<p>Obrazek do użycia:</p>
+<p class="toppizza">Obrazek do użycia:</p>
 <img id="maupa" src="../Obrazki/maupa.jpeg" alt="maupa" width="220" height="277">
 
-<p>Canvas to fill:</p>
+<p class="totest">Canvas to fill:</p>
 <canvas id="myCanvas1" width="250" height="300"
 style="border:1px solid #d3d3d3;">
 </canvas>
 
 <p><button onclick="myCanvas1()">Try it</button></p>
+
+<p class="my-tee">Lubię herbatkę</p>
 
 <div class="dropdown">Najedź myszką na mnie!
     <div class="dropdown-content">Ceść!</div>
@@ -652,6 +654,10 @@ autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-s
 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <a href="grajavascript.html" target="_blank">Idziemy odwiedzieć kolejną stronę</a>
+
+<button onclick="getLocation()">Twoja lokalizacja</button>
+
+<p id="demo5"></p>
 
 <footer style="text-align: center;">
     Koniec!
@@ -749,6 +755,27 @@ video.addEventListener("volumechange", function() {
             video.volume = VOLUME_CONSTANT;
         }
     });
+
+
+const x = document.getElementById("demo5");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(success, error);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function success(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+function error() {
+  alert("Sorry, no position available.");
+}
+
 </script>
 
 
