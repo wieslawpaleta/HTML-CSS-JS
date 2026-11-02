@@ -524,3 +524,15 @@ a[target="_blank"] {
 [class|="box"] {
     border: 5px solid yellow;
 }
+
+[class^="top"] {
+    border: 5px solid yellow;
+}
+
+[class$="test"] {
+    border: 5px solid green;
+}
+
+[class*="te"] {
+    border: 5px solid green;
+}
