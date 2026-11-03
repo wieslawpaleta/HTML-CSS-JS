@@ -25,7 +25,8 @@ Input Types/Input Types/Checkbox, Input Types/Input Types/Input Type Url, Input 
 Input Attributes/Input Attributes, Input Attributes/Input Attributes/the height and width Attributes, Input Attributes/Exercises,
 Input Form Attributes/Input Form Attributes/The formmethod Attribute, Input From Attributes Exercises, SVG Graphics/SVG Graphics
 Canvas/Canvas, SVG/SVG, SVG/SVG CODE CHALLENGE, HTML Media, Video/Video, Video/Code Challenge, Audio/Audio, Audio/Code Challenge,
-Plug-ins/Plug-ins/The <embed> Element, YouTube, Web APIs, Geolocation API/Error Handling and Rejections
+Plug-ins/Plug-ins/The <embed> Element, YouTube, Web APIs, Geolocation API/Error Handling and Rejections,
+Drag and Drop API
 
 -->
 
@@ -772,8 +773,21 @@ function success(position) {
   "<br>Longitude: " + position.coords.longitude;
 }
 
-function error() {
-  alert("Sorry, no position available.");
+function error(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      x.innerHTML = "User denied the request for Geolocation."
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML = "Location information is unavailable."
+      break;
+    case error.TIMEOUT:
+      x.innerHTML = "The request to get user location timed out."
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML = "An unknown error occurred."
+      break;
+  }
 }
 
 </script>
