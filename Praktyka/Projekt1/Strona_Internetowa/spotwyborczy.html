@@ -660,6 +660,10 @@ referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <p id="demo5"></p>
 
+<div ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" style="width: 230px; height: 241; padding: 10px; border: 1px solid #aaaaaa;"></div>
+<br>
+<img id="img1" src="../Obrazki/maupa.jpeg" draggable="true" ondragstart="dragstartHandler(event)" width="220" height="231">
+
 <footer style="text-align: center;">
     Koniec!
 </footer>
@@ -789,6 +793,21 @@ function error(error) {
       break;
   }
 }
+
+function dragstartHandler(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function dragoverHandler(ev) {
+  ev.preventDefault();
+}
+
+function dropHandler(ev) {
+  ev.preventDefault();
+  const data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+
 
 </script>
 
