@@ -26,7 +26,7 @@ Input Attributes/Input Attributes, Input Attributes/Input Attributes/the height 
 Input Form Attributes/Input Form Attributes/The formmethod Attribute, Input From Attributes Exercises, SVG Graphics/SVG Graphics
 Canvas/Canvas, SVG/SVG, SVG/SVG CODE CHALLENGE, HTML Media, Video/Video, Video/Code Challenge, Audio/Audio, Audio/Code Challenge,
 Plug-ins/Plug-ins/The <embed> Element, YouTube, Web APIs, Geolocation API/Error Handling and Rejections,
-Drag and Drop API
+Drag and Drop API, Popover API,  Web Storage API
 
 -->
 
@@ -660,9 +660,16 @@ referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <p id="demo5"></p>
 
-<div ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" style="width: 230px; height: 241; padding: 10px; border: 1px solid #aaaaaa;"></div>
+<div id="div1" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" style="width: 230px; height: 241; padding: 10px; border: 1px solid #aaaaaa;"></div>
 <br>
 <img id="img1" src="../Obrazki/maupa.jpeg" draggable="true" ondragstart="dragstartHandler(event)" width="220" height="231">
+
+<button popovertarget="tip1" popovertargetaction="show">Pokaż</button>
+<button popovertarget="tip1" popovertargetaction="hide">Ukryj</button>
+
+<div id="tip1" popover>
+    ŚREDNIA HAWAJSKA DLA KAŻDEGO!!!
+</div>
 
 <footer style="text-align: center;">
     Koniec!
