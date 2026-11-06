@@ -88,6 +88,9 @@
     <input type="button" value="Button">
 </form> -->
 
+<div id="result"></div>
+
+
 <form>
     <input type="text" name="search" placeholder="Search...">
 </form>
@@ -123,6 +126,19 @@ function error(error) {
       x.innerHTML = "An unknown error occurred."
       break;
   }
+}
+
+const d = document.getElementById("result");
+
+if (typeof(Storage) !== "undefined") {
+  // Store
+  localStorage.setItem("lastname", "Małpa");
+  localStorage.setItem("bgcolor", "yellow");
+  // Retrieve
+  d.innerHTML = localStorage.getItem("lastname");
+  d.style.backgroundColor = localStorage.getItem("bgcolor");
+} else {
+  d.innerHTML = "Sorry, no Web storage support!";
 }
 </script>
 

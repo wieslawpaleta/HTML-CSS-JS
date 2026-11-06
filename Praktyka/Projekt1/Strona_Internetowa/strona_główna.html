@@ -134,6 +134,21 @@ position: fixed;
 }
 
 </style>
+<script>
+function clickCounter() {
+  const x = document.getElementById("result");
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    x.innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s)!";
+  } else {
+    x.innerHTML = "Sorry, no Web storage support!";
+  }
+}
+</script>
   <title>
     Rozsuwane menu boczne w samym CSS 
   </title>
@@ -193,6 +208,10 @@ public class Bienvenido {
 </pre></td>
 </tr>
 </table>
+</div>
+<div>
+<button onclick="clickCounter()" type="button">Polub mnie</button>
+<p id="result"></p>
 </div>
 </body>
 </html>

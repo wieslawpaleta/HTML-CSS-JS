@@ -26,7 +26,7 @@ Input Attributes/Input Attributes, Input Attributes/Input Attributes/the height 
 Input Form Attributes/Input Form Attributes/The formmethod Attribute, Input From Attributes Exercises, SVG Graphics/SVG Graphics
 Canvas/Canvas, SVG/SVG, SVG/SVG CODE CHALLENGE, HTML Media, Video/Video, Video/Code Challenge, Audio/Audio, Audio/Code Challenge,
 Plug-ins/Plug-ins/The <embed> Element, YouTube, Web APIs, Geolocation API/Error Handling and Rejections,
-Drag and Drop API, Popover API,  Web Storage API
+Drag and Drop API, Popover API,  Web Storage API, Web Workers API
 
 -->
 
@@ -671,6 +671,33 @@ referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     ŚREDNIA HAWAJSKA DLA KAŻDEGO!!!
 </div>
 
+<div id="result"></div>
+
+<div class="responsive-form">
+
+ <form action="/action_page.php">
+   <label for="fname">Imię:</label>
+   <input type="text" id="fname" name="fname" placeholder="Czyjeś imię">
+
+   <label for="lname">Nazwisko:</label>
+   <input type="text" id="lname" name="lname" placeholder="Czyjeś nazwisko">
+
+   <label for="country">Kraj:</label>
+   <select id="country" name="country">
+     <option value="polska">Polska</option>
+     <option value="hiszpania">Hiszpania</option>
+     <option value="francja">Francja</option>
+    </select>
+    
+    <label for="message">Wiadomosć:</label>
+    <textarea id="message" name="message" placeholder="Napisz coś..."></textarea>
+
+    <input type="submit" value="Submit">
+ </form>
+
+</div>
+
+
 <footer style="text-align: center;">
     Koniec!
 </footer>
@@ -815,6 +842,12 @@ function dropHandler(ev) {
   ev.target.appendChild(document.getElementById(data));
 }
 
+const d = document.getElementById("result");
+if (typeof(Storage) !== "undefined") {
+  d.innerHTML = "Your browser supports Web storage!";
+} else {
+  d.innerHTML = "Sorry, no Web storage support!";
+}
 
 </script>
 

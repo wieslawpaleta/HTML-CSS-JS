@@ -35,7 +35,21 @@ footer {
   background-color: #333;
 
 </style>
-
+<script>
+function clickCounter() {
+  const x = document.getElementById("result");
+  if (typeof(Storage) !== "undefined") {
+    if (sessionStorage.clickcount) {
+      sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+    } else {
+      sessionStorage.clickcount = 1;
+    }
+    x.innerHTML = "You have clicked the button " + sessionStorage.clickcount + " time(s) in this session!";
+  } else {
+    x.innerHTML = "Sorry, no Web storage support!";
+  }
+}
+</script>
 <link rel="icon" type="image/x-icon" href="../Obrazki/slowniktlo.png"></link>
 </head>
 <h1 style="background-color: green; text-align: center;">Strona dla wielojęzycznych</h1>
@@ -275,6 +289,8 @@ Słownik Wielojęzykowy<br><img src="../Obrazki/pons.jpg"; style="border-radius:
 <hr>
 <footer>
 <p style="text-align: center">Strona w rozbudowie (jak nie zapomnę)</p>
+<button onclick="clickCounter()" type="button">Click me!</button>
+<p id="result"></p>
 </footer>
 
 
