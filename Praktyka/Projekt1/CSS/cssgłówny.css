@@ -29,7 +29,7 @@ Navigation Bars/Horizontal Navbar/Fixed Navigation Bar, Dropdowns/Dropdowns, Dro
 Dropdowns/Code Challenge, Image Gallery/Image Gallery, Image Gallery/Code Challenge, Image Sprites/Image Sprites,
 Image Sprites/Code Challenge, Attribute Selectors/Attribute Selectors, Attribute Selectors/Advanced Attr Selectors,
 Attribute Selectors/Code Challenge, Attribute Selectors/Code Challenge, Forms/Style Forms, Forms/Style Input,
-Forms/Input Focus/Icons/Animated Search Input, Forms/Other Form Elements
+Forms/Input Focus/Icons/Animated Search Input, Forms/Other Form Elements, Forms/Code Challenge, Counters/Counters
  (tu jestem teraz!)
 
 */
@@ -553,4 +553,63 @@ a[target="_blank"] {
 
 [popover]::backdrop {
     background: rgb(0 0 0 / 0.3);
+}
+
+.responsive-form {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 4px;
+    border: 2px solid #04AA6D;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+label {
+    min-width: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input[type=text], select {
+    min-width: 45%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+textarea {
+    min-width: 45%;
+    height: 150px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    label,
+    input[type=text],
+    input[type=submit],
+    select, textarea {
+        flex: 100%;
+        min-width: 100%;
+    }
 }
