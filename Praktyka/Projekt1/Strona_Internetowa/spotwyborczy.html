@@ -697,6 +697,11 @@ referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 </div>
 
+<p>Count numbers: <output id="result1"></output></p>
+<button onclick="startWorker()">Start Worker</button> 
+<button onclick="stopWorker()">Stop Worker</button>
+
+<div id="result2"></div>
 
 <footer style="text-align: center;">
     Koniec!
@@ -849,6 +854,36 @@ if (typeof(Storage) !== "undefined") {
   d.innerHTML = "Sorry, no Web storage support!";
 }
 
+let w;
+
+function startWorker() {
+  const x = document.getElementById("result1");
+  if(typeof(Worker) !== "undefined") {
+    if(typeof(w) == "undefined") {
+      w = new Worker("demo_workers.js");
+    }
+    w.onmessage = function(event) {
+      x.innerHTML = event.data;
+    };
+  } else {
+    x.innerHTML = "Sorry! No Web Worker support.";
+  }
+}
+
+function stopWorker() { 
+  w.terminate();
+  w = undefined;
+}
+
+const k = document.getElementById("result2");
+if(typeof(EventSource) !== "undefined") {
+  var source = new EventSource("demo_sse.php");
+  source.onmessage = function(event) {
+    k.innerHTML += event.data + "<br>";
+  };
+} else {
+  k.innerHTML = "Sorry, no support for server-sent events.";
+}
 </script>
 
 
