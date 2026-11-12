@@ -32,7 +32,8 @@ Attribute Selectors/Code Challenge, Attribute Selectors/Code Challenge, Forms/St
 Forms/Input Focus/Icons/Animated Search Input, Forms/Other Form Elements, Forms/Code Challenge, Counters/Counters,
 Counters/Nested Counters, Counters/Code Challenge, Units/Units, Units/Code Challlenge,
 Inheritance/Inheritance, Inheritance/Inheritance, Specificity/Specificity, Specificity/Specificity Hierarchy,
-Specificity/Code challenge, !important Rule/!important  (tu jestem teraz!)
+Specificity/Code challenge, !important Rule/!important, !important/!important Code Challenge,
+Math Functions/Math Functions  (tu jestem teraz!)
 
 */
 
@@ -52,7 +53,8 @@ body {
     /*background-position:right top;*/
     /*background-attachment: fixed;*/
     /* background-attachment: scroll; */ 
-    background: #d9dd00 url("../Obrazki/cieplewygazowanepiwo.jpg") no-repeat center;
+    /* background: #d9dd00 url("../Obrazki/cieplewygazowanepiwo.jpg") no-repeat center !important; */
+    background: #d9dd00 url("../Obrazki/cieplewygazowanepiwo.jpg") no-repeat center !important; 
     background-attachment: fixed;
     background-size: 100% 100%;
     cursor: wait;
