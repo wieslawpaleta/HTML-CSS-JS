@@ -7,16 +7,22 @@ body {
 }
 
 .obramowanie-spisu {
-    border: 1px black solid;
+    border: 10px double black;
     width: fit-content;
     padding: 10px 20px 10px 35px;
-    
+    box-shadow: 10px 6px 12px -2px rgb(0, 0, 0, 0.8);
 }
 
 .lato-regular {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+#borderimg { 
+    border: 200px solid transparent;
+    padding: 15px;
+    border-image: url(../Obrazy/ramka.png) 40% stretch;
 }
 
 /* https://www.w3schools.com/css/css_website_layout.asp zobacz taki wzór strony */
