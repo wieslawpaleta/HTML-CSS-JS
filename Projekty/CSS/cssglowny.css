@@ -23,6 +23,8 @@ body {
     border: 200px solid transparent;
     padding: 15px;
     border-image: url(../Obrazy/ramka.png) 40% stretch;
+    background: url(../Obrazy/img_flwr.gif) right bottom no-repeat, url(../Obrazy/paper.gif) left top repeat;
 }
+
 
 /* https://www.w3schools.com/css/css_website_layout.asp zobacz taki wzór strony */
