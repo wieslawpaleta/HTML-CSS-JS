@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Układanka z obrazka</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f0f2f5;
+      margin-top: 30px;
+    }
+
+    /* Siatka 3x3 dla puzzli */
+    #plansza {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      gap: 2px;
+      border: 4px solid #333;
+      background-color: #333;
+      margin-top: 20px;
+    }
+
+    /* Pojedynczy kwadrat */
+    .kafelek {
+      width: 100px;
+      height: 100px;
+      background-size: 300px 300px; /* Rozmiar całego obrazka (3 x 100px) */
+      cursor: pointer;
+      transition: transform 0.1s;
+    }
+
+    /* Podświetlenie wybranego kafelka */
+    .wybrany {
+      outline: 3px solid #ff4757;
+      z-index: 10;
+      transform: scale(0.95);
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Ułóż obrazek!</h2>
+  <p>Kliknij jeden kafelek, a potem drugi, aby zamienić je miejscami.</p>
+
+  <div id="plansza"></div>
+  <button onclick="stworzGre()">Wymieszaj ponownie</button>
+
+  <script>
+    const plansza = document.getElementById('plansza');
+    // Przykładowy obrazek z internetu (300x300 px) - możesz tu wpisać ścieżkę do własnego pliku, np. "moj_obrazek.jpg"
+    const obrazekURL = 'https://picsum.photos'; 
+    const rozmiar = 3; // Siatka 3x3 (9 elementów)
+    let wybranyKafelek = null;
+
+    function stworzGre() {
+      plansza.innerHTML = '';
+      wybranyKafelek = null;
+      let kafelki = [];
+
+      // 1. Tworzenie 9 kafelków i wycinanie odpowiedniego fragmentu obrazka
+      for (let i = 0; i < rozmiar * rozmiar; i++) {
+        const kafelek = document.createElement('div');
+        kafelek.classList.add('kafelek');
+        kafelek.dataset.poprawnaPozycja = i;
+
+        // Obliczanie przesunięcia tła (CSS Sprite)
+        const x = (i % rozmiar) * 100;
+        const y = Math.floor(i / rozmiar) * 100;
+
+        kafelek.style.backgroundImage = `url('${obrazekURL}')`;
+        kafelek.style.backgroundPosition = `-${x}px -${y}px`;
+
+        kafelek.addEventListener('click', () => klikniecieKafelka(kafelek));
+        kafelki.push(kafelek);
+      }
+
+      // 2. Losowe mieszanie kafelków
+      kafelki.sort(() => Math.random() - 0.5);
+
+      // 3. Dodanie kafelków na planszę
+      kafelki.forEach(kafelek => plansza.appendChild(kafelek));
+    }
+
+    function klikniecieKafelka(kafelek) {
+      // Jeśli żaden nie jest wybrany - zaznacz kliknięty
+      if (!wybranyKafelek) {
+        wybranyKafelek = kafelek;
+        kafelek.classList.add('wybrany');
+        return;
+      }
+
+      // Jeśli kliknięto ten sam - odznacz
+      if (wybranyKafelek === kafelek) {
+        kafelek.classList.remove('wybrany');
+        wybranyKafelek = null;
+        return;
+      }
+
+      // Zamiana dwóch kafelków miejscami w strukturze HTML
+      zamienKafelki(wybranyKafelek, kafelek);
+      
+      wybranyKafelek.classList.remove('wybrany');
+      wybranyKafelek = null;
+
+      sprawdzWygrana();
+    }
+
+    function zamienKafelki(kafelek1, kafelek2) {
+      const rodzic = kafelek1.parentNode;
+      const nastepny1 = kafelek1.nextSibling === kafelek2 ? kafelek1 : kafelek1.nextSibling;
+      rodzic.insertBefore(kafelek1, kafelek2);
+      rodzic.insertBefore(kafelek2, nastepny1);
+    }
+
+    function sprawdzWygrana() {
+      const aktualneKafelki = document.querySelectorAll('.kafelek');
+      let wygrana = true;
+
+      aktualneKafelki.forEach((kafelek, indeks) => {
+        if (parseInt(kafelek.dataset.poprawnaPozycja) !== indeks) {
+          wygrana = false;
+        }
+      });
+
+      if (wygrana) {
+        setTimeout(() => alert('Brawo! Obrazek ułożony!'), 100);
+      }
+    }
+
+    // Start gry po załadowaniu strony
+    stworzGre();
+  </script>
+</body>
+</html>

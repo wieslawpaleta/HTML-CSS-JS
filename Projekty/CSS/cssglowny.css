@@ -20,10 +20,12 @@ body {
 }
 
 #borderimg { 
-    border: 200px solid transparent;
+    border: 50px solid transparent;
     padding: 15px;
-    border-image: url(../Obrazy/ramka.png) 40% stretch;
+    min-height: 200px;
+    border-image: url(../Obrazy/ramka.png) 20% 15% stretch;
     background: url(../Obrazy/img_flwr.gif) right bottom no-repeat, url(../Obrazy/paper.gif) left top repeat;
+    background-clip: padding-box;
 }
 
 
