@@ -26,7 +26,11 @@ body {
     border-image: url(../Obrazy/ramka.png) 20% 15% stretch;
     background: url(../Obrazy/img_flwr.gif) right bottom no-repeat, url(../Obrazy/paper.gif) left top repeat;
     background-clip: padding-box;
+    background-size: contain, auto;
+}
+
+#przycisk {
+    position:;
 }
 
 
-/* https://www.w3schools.com/css/css_website_layout.asp zobacz taki wzór strony */
