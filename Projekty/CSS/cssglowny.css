@@ -30,7 +30,16 @@ body {
     background-origin: padding-box;
 }
 
+.kontener-glowny {
+    display: flex;
+    align-items: flex-start; /* Wyrównuje menu i grę do górnej krawędzi */
+    gap: 50px;               /* Odstęp między menu a grą */
+    margin-top: 20px;        /* Odstęp od ozdobnej ramki na górze */
+}
+
 #plansza {
+    width: 304px;
+    height: 304px;
     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
@@ -38,6 +47,7 @@ body {
     border: 4px solid #333;
     background-color: #333;
     margin-top:20px;
+    
 }
 
 .kafelek {
