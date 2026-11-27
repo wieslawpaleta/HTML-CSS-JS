@@ -32,22 +32,22 @@ body {
 
 .kontener-glowny {
     display: flex;
-    align-items: flex-start; /* Wyrównuje menu i grę do górnej krawędzi */
-    gap: 50px;               /* Odstęp między menu a grą */
-    margin-top: 20px;        /* Odstęp od ozdobnej ramki na górze */
+    align-items: flex-start; 
+    gap: 50px;             
+    margin-top: 20px;      
 }
 
 #plansza {
     width: 304px;
     height: 304px;
     display: grid;
+    place-content: center;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
     gap: 2px;
     border: 4px solid #333;
     background-color: #333;
     margin-top:20px;
-    
 }
 
 .kafelek {
@@ -71,5 +71,10 @@ body {
     cursor: pointer; 
 }
 
-
-
+.sekcja-gry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
